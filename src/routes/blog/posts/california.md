@@ -24,3 +24,6 @@ After the concert, it really invigorated my love for her again and I started wat
  
  Our first flight had an overnight layover, so we got a hotel in Denver and headed back the next morning to our flight that would land us in L.A. just over 3 hours before we had to be at The Voice for our taping. We got our seats and found out we were seperated on this flight, but figured it would be fine. We board the plane and we are a few rows apart, seperated by a huge family flying back home from a funeral. One of the dads offered me the aisle seat, so he could help with the kids. I accepted and started telling him I had 3 kids of my own and totally understand what they are going through. I showed him pictures of my kids and chatted about why they were flying. He then asked me what we were doing in L.A., and I said going to see The Voice and The Kelly Clarkson Show. He chuckled and said no kidding, my buddy works on both of those shows! He asked for my name and proceeded to text his friend, you will never guess who this "friend" turned out to be!
 
+ <p align="center">
+<img src="blog-images/kcs/road_to_hollywood.jpg" alt="road to hollywood image">
+</p>
