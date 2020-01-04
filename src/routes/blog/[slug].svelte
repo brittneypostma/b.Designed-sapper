@@ -27,6 +27,14 @@
     margin: 0 auto;
   }
 
+  .content :global(hr) {
+    height: 2px;
+    border: 0;
+    border-top: 2px dotted rgb(155, 50, 43, 0.75);
+    margin: 2em 0 1em;
+    padding: 0;
+  }
+
   .content :global(blockquote) {
     background: #f9f9f9;
     color: #777;
