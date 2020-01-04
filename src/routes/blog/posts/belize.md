@@ -1,0 +1,42 @@
+---
+title: "Belize"
+date: "08-22-2019"
+---
+<p align='center'>
+<img src="blog-images/belize-sm.jpg" alt="Belize">
+</p>
+
+---
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center">
+
+<p style='float: left'>
+<img src="blog-images/xunantunich.jpg" alt="Xunantunich">
+</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today we arrived in Belize City, the trade capital of Belize. The actual capital is Belmopan, which is located in the middle of the country. Belize is a small central American country with around 390k people. 350k of which live in or around Belize City, where most of the jobs are located. Over 70% of Belize is undeveloped jungle. Belize is bordered on the North by Mexico and the West and South by Guatemala. Surprisingly, the official language is English and they were a British Colony named British Honduras from 1864 until 1964. As far back as 1763 Spain owned most of the land and allowed the British settlers to participate in the logwood industry common in the area for dyes and later the Mahogany trees. The British imported many slaves from Africa to cut the logwood and the relationships between the slaves and the Europeans led to the modern day Creoles that are the majority population in Belize. The Treaty of Versailles in 1783 set the boundaries for the British declared by the Treaty of Paris that allowed them to cut the logwood. However, Spanish attacks to defend its rights over territory continued until a victory was won by the British settlers in the Battle of St. George’s Caye in 1798. After that, British control over the settlement was finalized and in 1871 British Honduras was formally declared a British Colony. The country’s name was changed in June of 1973 from British Honduras to Belize. Belize gained independence on September 21, 1981, but Guatemala still holds a territorial claim to Belize stemming from its rights as a former colony of Spain.</p>
+
+</div>
+
+---
+
+> "Local legend holds that around the end of the 1800s, a gentleman from the village of San Jose Succotz Belize went hunting near the site. Crossing the base of the Castillo, he was struck by the appearance of a beautiful statuesque Maya maiden, dressed in traditional “huipil” and “pik,”,and dazzling in the rays of the rising sun. The woman stood motionless by the mouth of a cave which extended beneath the large structure. Stricken by her appearance, the man threw his gun aside and ran downhill to the village. After recounting his tale several villagers led by their native priest returned to the site. Arriving at the large mound they found the mouth of the tunnel, but the stone maiden had disappeared. Thereafter locals claim that the woman has appeared to several others but none have been able to follow her into the cavern."<br/> [Quoted from https://belize.com/xunantunich-maya-site-belize/](<[**https://www.google.com**](https://belize.com/xunantunich-maya-site-belize/)>)
+
+
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We decided for this stop we wanted to visit one of the most famous Mayan ruins in Belize, Xunantunich. Xunantunich, pronounced 'Zoo-naan-to-nik', derives from the Yucatec Maya language and means “Stone Woman.” It was built somewhere near 1200 B.C and the city was abandoned in 1050 A.D. Scholars estimate around 7000 people lived in the area surrounding the large temple on the hill, called El Castillo. Mayans believed the higher their building the closer they were to Heaven. They believe there are 13 layers of Heaven and 9 layers of the Underworld. This is how they developed their clock, daylight had the hours 1 to 13 and night had the hours 1 to 9. Xunantunich is over a 2 hour drive from Belize City, so we were in for a long ride. Our driver told us about things as we passed them and we got to see some interesting landmarks, like the Laying Man, a quarry in a set of hills that appear to look like a man laying on his back.</p>
+
+
+<img src="blog-images/man.jpg" alt="Laying Man">
+
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We could first see Xunantunich atop a hill when we were still over 45 minutes away. It is one of Belize's highest points at 800 feet. We arrived at the bottom of the hill and had to exit the van we arrived on. The van was driven onto a hand cranked ferry and then we stepped on the ferry as well and crossed the river. Afterwards, we were able to get back in the van and drive up the hill to the base of the Xunantunich site. There is a gift shop, restrooms, and a museum at the base. We used the restroom quickly and started our tour to avoid the rush of others coming behind us. We started our tour walking up a steep hill until we got to a level surface just before the steps entering the courtyard area of the city. We were told how the city was discovered and even how some of it got destroyed because a doctor named Thomas Gann decided to use dynamite to try and clear away some of the overgrown areas. This demolished pieces of the temple and the city. Fortunately, he did not continue and other scholars and archeologists came along to clear away the earth properly and to prevent even more destruction from weather erosion. They do not restore any of the temple, but try to keep it preserved as it is by adding cement to prevent water from getting in. They have also added handrails in spots and replaced a wood beam in one of the royal "bedrooms". On the main temple, there are 130 steps up and 122 steps going down. The beginning steps are very tall considering the Mayans were a short people, typically standing less than 5 feet tall. Each step was around 2 feet high along the bottom layer. These temples were not meant to be climbed except by the royal family. They considered it a protection for the royal family, so if any villagers decided to try and get to them, they were sacrificing themselves to the gods by trying to climb up the temple and likely dying in their attempt. Other than the temple, there was a courtyard area where they would have gatherings and parties and surrounding buildings they used for games, storage, and a tomb. The Mayans were known for sacrificing people and they created a game for it. The game used a ball and hoops and both the winner and the loser were decapitated in sacrifice after the game was finished. It was an honor for them to compete in the game.
+
+<p align='center'>
+<img src="blog-images/sky.jpg" alt="Guatemala from top of Xunantunich">
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xunantunich is about 1 mile from the Guatemalan western border and from the top of the temple, you can see for up to 30 miles in all directions. It is definitely an awe inspiring site and I am glad we got to experience it. On the way back, we stopped at a local restaurant and had a traditional meal of slow roasted chicken and rice and beans. We also got to have some of Belize's local beer, Belikin. Overall, it was a long, but wonderful day and I'm so glad we got to visit this country.
