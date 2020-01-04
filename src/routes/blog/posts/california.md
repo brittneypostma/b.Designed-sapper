@@ -3,7 +3,7 @@ title: "Hollywood, California"
 date: "11-14-2019"
 ---
 <p align="center">
-<img src="blog-images/kcs/hollywood.jpg" alt="Hollywood Sign" >
+<img src="blog-images/kcs/hollywood.jpg" alt="Hollywood Sign" style="width: 85%">
 </p>
 
 Today was the day. The day I got to meet and hug Kelly Clarkson!  This woman has been someone I have admired since I first heard her sing on idol, but I truly connected with her when she sang "Think Twice" by Celine Dion in the semifinals of American Idol.  The song got medeiocre reviews from the judges, but they all agreed (me included) that Kelly killed it! The song, Think Twice, was from the album The Colour of My Love from 1993 and was one of my all time favorite albums.  It immediately took me back to listening and belting out this album on repeat as a child. I continued to love Kelly's music and at one point I even had her song "Never Again" as my alarm, but I could never seem to afford to go to any of her concerts.  The closest I came was when I was a server and she sang at the Allegan County Fair.  Tickets were $60 a piece and as much as I wanted to go, living paycheck to paycheck, it just didn't seem worth it. Cut to Valentine's Day 2019, my friend got tickets to Kelly's Meaning of Life tour through vet tics and invited me along. Not only did we get super cheap tickets, they ended up being **ON THE FLOOR**. I was literally standing less than 50 feet from Kelly Clarkson. It was one of the most amazing experiences and I even snapped a few cool pics, including one where she had accidentaly broken her mic pack by jumping to "Since U Been Gone".
