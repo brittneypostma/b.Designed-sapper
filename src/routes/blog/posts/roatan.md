@@ -10,10 +10,10 @@ date: "08-21-2019"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today we visited an island off the coast of Honduras called Roatan. We docked at Mahogany Bay, where Carnival has built a beautiful port with shops and a ski lift down to the beach. Unfortunately, we did not have time to check out that, but we did have an amazing day. We left out almost as soon as we docked for Gumbalimba Park. This is an animal sanctuary where they rehabilitate and breed animals. We traveled 45 minutes in a van with 3 other couples and our guide to the park. We were offered lockers for \$5 USD and told a little bit about our trip. There was a gift shop and small restaurant that offered basic American food like hotdogs and burgers. There were several photo opportunities as we arrived and the view was absolutely gorgeous. We were steps away from a white sand beach and the Caribbean Sea. After everyone had put their things in a locker and gotten situated, we headed to our tour.
 
 <p align='center'>
-    <img src="blog-images/sammy.jpg" alt="Sammy"/>
-    <img src="blog-images/iguana.jpg" alt="Iguana"/>
-    <img src="blog-images/hummingbird.jpg" alt="Hummingbird">
+    <table><tr><td><img src="blog-images/sammy.jpg" float="left" alt="Sammy"/></td><td>
+<img src="blog-images/iguana.jpg" float="left" alt="Iguana"/></td><td><img src="blog-images/hummingbird.jpg" float="left" alt="Hummingbird"></td></tr></table>
 </p>
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As we started towards our first stop, we saw iguana's, humming birds, and even their only sloth, Sammy, that they have on the property. They do not cage any of the animals in at Gumbalimba, but found that once they released the animals to the wild, they always came back. Since they feed the animals regularly, they stay close by and have made Gumbalimba their home. Our first stop came at the insectitorium where they house a local scientist work on the study of insects across the world. There were many preserved varieties of butterflies, beetles, scorpions, and even a few spiders. We continued our tour into the cave system that they have dug out and placed historical murals, artifacts, and information about their culture. As we exited the cave, we were told we could either decide to take the rope bridge across to the next location or take the "Chicken Walk" on the sturdier bridge. 
 
@@ -36,12 +36,12 @@ There were 3 macaws sitting on the ground just a few feet away. I approached slo
 A person in our party with a hat on even had one pick off the button on the top of his hat. These animals like to play. After everyone had finished taking pictures with the birds, we were told we were going to the monkey area and given some precautions about the monkeys. They also like to play, so we were warned to let them take anything they tried to grab and the trainers would get it back for us. The monkeys are prone to bite if they are grabbed. These warnings only deterred us until we got into the area and found these monkeys to be the coolest part of the whole day. They were just jumping from person to person, posing for photos, trying to get their next treat. Never minding where they landed. I had one land on my arm, my shoulders, wrap their tell around my neck to hang on, and even use my head as a landing pad and jumping off point. 
 
 <p align='center'>
-    <img src="blog-images/monkey1.jpg" alt="monkeys"/>
-    <img src="blog-images/monkey2.jpg" alt="monkeys"/>
-    <img src="blog-images/monkey3.jpg" alt="monkeys">
+    <table><tr><td><img src="blog-images/monkey1.jpg" float="left" alt="monkeys"/></td><td>
+<img src="blog-images/monkey2.jpg" float="left" alt="monkeys"/></td><td><img src="blog-images/monkey3.jpg" float="left" alt="monkeys"></td></tr></table>
 </p>
 
-This was by far the most exciting thing we had done so far on the trip and there were smiles and laughs all around. We got one last look at the sloth on the way out and grabbed all of our stuff to await our transport to Tabyana Beach.
+
+This was by far the most exciting thing we had done on the trip and there were smiles and laughs all around. We got one last look at the sloth on the way out and grabbed all of our stuff to await our transport to Tabyana Beach.
 
 <p align='center'>
 <img src="blog-images/beach.jpg" alt="Tabyana Beach">

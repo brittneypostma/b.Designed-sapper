@@ -18,22 +18,30 @@
 </script>
 
 <style>
+  h1 {
+    font-size: 7vh;
+    font-weight: 500;
+  }
   .post-page {
-    width: 75%;
+    width: 50%;
     margin: 0 auto;
   }
 
   .content :global(blockquote) {
     background: #f9f9f9;
-    color: #111;
+    color: #777;
     border-left: 10px solid#ccc;
     margin: 1.5em 10px;
     padding: 0.1em 10px;
   }
 
-  .content :global(h2) {
-    font-size: 1.4em;
-    font-weight: 500;
+  .content :global(img) {
+    max-width: 100%;
+  }
+
+  .content :global(p) {
+    font-size: 2.5vh;
+    font-weight: 300;
   }
 
   .content :global(pre) {
@@ -63,6 +71,13 @@
       margin: 0 auto;
     }
   }
+
+  @media only screen and (min-width: 901px) and (max-width: 1400px) {
+    .post-page {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
 </style>
 
 <svelte:head>
@@ -81,3 +96,5 @@
   </div>
 
 </div>
+
+<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center"></div> -->
