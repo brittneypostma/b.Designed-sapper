@@ -1,6 +1,8 @@
 ---
 title: "Hollywood, California"
 date: "11-14-2019"
+image: "blog-images/kcs/hollywood.jpg"
+alt: "Hollywood Sign"
 ---
 <p align="center">
 <img src="blog-images/kcs/hollywood.jpg" alt="Hollywood Sign" style="width: 85%">

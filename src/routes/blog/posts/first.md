@@ -1,6 +1,8 @@
 ---
 title: "My First Post"
 date: "07-28-2019"
+image: "blog-images/photo.png"
+alt: "My picture"
 ---
 
 <p align='center'>

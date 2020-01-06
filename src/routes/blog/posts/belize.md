@@ -1,6 +1,8 @@
 ---
 title: "Belize"
 date: "08-22-2019"
+image: 'blog-images/belize-sm.jpg'
+alt: 'Belize'
 ---
 <p align='center'>
 <img src="blog-images/belize-sm.jpg" alt="Belize">

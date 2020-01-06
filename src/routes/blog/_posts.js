@@ -40,7 +40,9 @@ const posts = fs
 		} = matter(fileMd);
 		const {
 			title,
-			date
+			date,
+			image,
+			alt
 		} = data;
 		const slug = fileName.split('.')[0];
 		let content = rawContent;
@@ -53,6 +55,8 @@ const posts = fs
 			html,
 			date,
 			printDate,
+			image,
+			alt
 		};
 	});
 

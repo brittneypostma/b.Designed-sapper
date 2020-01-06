@@ -16,20 +16,30 @@
   .grid-logs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2em;
+    grid-gap: 1em;
+    justify-items: center;
+    width: 75%;
+    margin: 0 auto;
   }
 
-  .list {
+  .card {
     list-style-type: none;
-    padding: 1rem;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.1s linear; /* Safari */
     transition: all 0.1s linear;
     margin-bottom: 1em;
     line-height: 1.5;
-    padding-inline-start: 0;
     text-align: center;
+    overflow: hidden;
+    max-width: 208px;
+  }
+
+  img {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    transform: scale(1.1);
   }
 
   a {
@@ -41,14 +51,11 @@
   a:visited {
     color: #333;
   }
-  .list:hover {
+  .card:hover {
     transform: scale(1.05);
   }
-  .list:active {
+  .card:active {
     transform: scale(0.95);
-  }
-  h2 {
-    margin: 0;
   }
 </style>
 
@@ -56,14 +63,15 @@
   <title>Blog Posts</title>
 </svelte:head>
 
-<h1>Blog Posts</h1>
+<h1>blog</h1>
 
 <div class="grid-logs">
   {#each posts as post}
-    <div>
+    <div class="card">
       <a rel="prefetch" href="blog/{post.slug}">
-        <div class="list">
-          <h2>{post.title}</h2>
+        <div>
+          <img src={post.image} alt={post.alt} />
+          <h3>{post.title}</h3>
           <p>{post.printDate}</p>
         </div>
       </a>

@@ -1,6 +1,8 @@
 ---
 title: "Grand Cayman"
 date: "08-20-2019"
+image: "blog-images/scuba.jpg"
+alt: "Joe scuba diving signing the okay sign with his hand"
 ---
 <p align='center'>
 <img src="blog-images/scuba.jpg" alt="Joe scuba diving signing the okay sign with his hand">
