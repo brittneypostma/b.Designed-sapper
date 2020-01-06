@@ -18,7 +18,6 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1em;
     justify-items: center;
-    width: 75%;
     margin: 0 auto;
   }
 

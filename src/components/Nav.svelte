@@ -26,16 +26,14 @@
     display: block;
     bottom: -1px;
     outline: none; */
-    top: -2px;
     background-position: 0 100%;
     background-image: linear-gradient(#ccc, #eee);
-    border-bottom: 2px solid black;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px #000;
   }
 
   .selected:hover {
     background-image: linear-gradient(#ccc, #eee);
-    top: -2px;
+    top: 0;
   }
 
   a {
@@ -64,7 +62,7 @@
   }
 
   a:hover {
-    top: -2px;
+    top: -1px;
     background-image: linear-gradient(to top, #00ffff, #00ffff 25%, #000 30%);
   }
 
