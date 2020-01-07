@@ -31,7 +31,7 @@
     line-height: 1.5;
     text-align: center;
     overflow: hidden;
-    max-width: 208px;
+    max-width: 225px;
   }
 
   img {

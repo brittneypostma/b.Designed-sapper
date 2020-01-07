@@ -10,30 +10,20 @@
     padding: 2px;
   }
 
-  /* clearfix */
-
-  /* .selected {
-    position: relative;
-    display: inline-block;
-  } */
-
   .selected {
-    /* position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
-    outline: none; */
+    top: 1px;
     background-position: 0 100%;
     background-image: linear-gradient(#ccc, #eee);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #000,
+      1px 1px 1px #000, white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px,
+      #9c9c9c 1px 2px 1px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
   }
 
   .selected:hover {
     background-image: linear-gradient(#ccc, #eee);
-    top: 0;
+    top: 1px;
   }
 
   a {
@@ -50,7 +40,8 @@
     align-items: center;
     font-family: "Arial Black", Gadget, sans-serif;
     letter-spacing: 1px;
-    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), -1px -1px 1px #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #000,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px;
   }
 
   a:first-child {
@@ -62,7 +53,6 @@
   }
 
   a:hover {
-    top: -1px;
     background-image: linear-gradient(to top, #00ffff, #00ffff 25%, #000 30%);
   }
 
