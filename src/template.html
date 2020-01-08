@@ -1,15 +1,44 @@
 <!doctype html>
 <html lang='en'>
+
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
-	<meta name='theme-color' content='#333333'>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="msapplication-TileColor" content="#000000">
+
+	<!-- Primary Meta Tags -->
+	<title>Console Logs</title>
+	<meta name="title" content="bDesigned">
+	<meta name="description"
+		content="bDesigned - portfolio and home page of Brittney Postma, owner and designer of bDesigned.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.facebook.com/b.Designed11/">
+	<meta property="og:title" content="bDesigned">
+	<meta property="og:description"
+		content="bDesigned - portfolio and home page of Brittney Postma, owner and designer of bDesigned.">
+	<meta property="og:image" content="https://console-logs.netlify.com/favicon.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:url" content="https://twitter.com/BrittneyPostma">
+	<meta property="twitter:title" content="bDesigned">
+	<meta property="twitter:description"
+		content="bDesigned - portfolio and home page of Brittney Postma, owner and designer of bDesigned.">
+	<meta property="twitter:image" content="https://bDesigned.netlify.com/favicon.png">
+	<meta name="twitter:image:alt" content="bDesigned Logo">
 
 	%sapper.base%
 
-	<link rel='stylesheet' href='global.css'>
-	<link rel='manifest' href='manifest.json'>
-	<link rel='icon' type='image/png' href='favicon.png'>
+	<link rel="stylesheet" href="global.css" />
+	<link rel="stylesheet" href="prism.css" />
+	<link rel="manifest" href="manifest.json" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
 
 	<!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
@@ -20,6 +49,7 @@
 	     the current page has one -->
 	%sapper.head%
 </head>
+
 <body>
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
@@ -30,4 +60,5 @@
 	     initialise the router -->
 	%sapper.scripts%
 </body>
+
 </html>
