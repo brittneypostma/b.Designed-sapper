@@ -27,6 +27,14 @@
     margin: 0 auto;
   }
 
+  a {
+    color: whitesmoke;
+  }
+
+  a:visited {
+    color: whitesmoke;
+  }
+
   .content :global(hr) {
     height: 2px;
     border: 0;
@@ -50,7 +58,6 @@
   .content :global(p) {
     font-size: 2.25vh;
     font-weight: 100;
-    color: #333;
   }
 
   .content :global(pre) {

@@ -12,15 +12,24 @@
   .selected {
     background-position: 0 100%;
     background-image: linear-gradient(#ccc, #eee);
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
   }
 
-  .selected:first-child {
-    border-left: 2px solid black;
+  a::before {
+    content: "";
+    position: absolute;
+    transition: transform 0.3s ease;
+    left: 12%;
+    bottom: 0;
+    top: 40px;
+    width: 75%;
+    height: 2px;
+    background: #aaa;
+    transform: scaleX(0);
   }
-  .selected:last-child {
-    border-right: 2px solid black;
+
+  .selected::before {
+    background: rgb(26, 26, 26);
+    transform: scaleX(1);
   }
 
   .selected:hover {
@@ -41,8 +50,8 @@
     align-items: center;
     font-family: "Arial Black", Gadget, sans-serif;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #000,
-      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #111,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
     border-right: 1px;
     border-left: 1px;
   }
@@ -87,15 +96,6 @@
   a:last-child::after {
     border-radius: 0 0.7em 0.7em 0;
   }
-
-  /* a:focus,
-  a:active {
-    outline: none;
-    top: -0.15em;
-    background-position: 0 100%;
-    background-image: linear-gradient(#ccc, #eee);
-    border-bottom: 2px solid black;
-  } */
 </style>
 
 <nav>

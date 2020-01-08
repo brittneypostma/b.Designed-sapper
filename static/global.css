@@ -11,58 +11,44 @@
 html {
 	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
-	-ms-overflow-style: none;  /* Internet Explorer 10+ */
-  	overflow: -moz-scrollbars-none; /* Should hide the scroll bar */
+	-ms-overflow-style: none;
+	/* Internet Explorer 10+ */
+	overflow: -moz-scrollbars-none;
 }
 
 
 /* No scroll bar for Safari and Chrome */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none; /* Might be enough */
-  background: transparent;
-  visibility: hidden;
-  width: 0px;
+	display: none;
+	background: transparent;
+	visibility: hidden;
+	width: 0px;
 }
 
 scroll-content {
-    overflow-x: hidden;
-    overflow-y: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 scroll-content::-webkit-scrollbar {
-    width: 0;
+	width: 0;
 }
-/* Sections
-	 ========================================================================== */
-
-/**
-   * Remove the margin in all browsers.
-   */
 
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #eee;
-	color: #111;
-	background: url("/me.png") no-repeat bottom right;
+	background-color: whitesmoke;
+	color: #eee;
 }
 
 html,
 body,
-main {
+main,
+#sapper {
 	height: 100%;
 }
 
-
-/**
-   * Render the `main` element consistently in IE.
-   */
-
-main {
-	display: block;
-	width: 75%;
-}
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and

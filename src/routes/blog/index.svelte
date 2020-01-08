@@ -19,6 +19,7 @@
     grid-gap: 1em;
     justify-items: center;
     margin: 0 auto;
+    width: 75%;
   }
 
   .card {
@@ -47,9 +48,11 @@
     background: #fff;
     display: block;
   }
+
   a:visited {
     color: #333;
   }
+
   .card:hover {
     transform: scale(1.05);
   }
