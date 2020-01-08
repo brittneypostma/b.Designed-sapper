@@ -4,26 +4,27 @@
 
 <style>
   nav {
-    position: relative;
     display: flex;
     justify-content: center;
     padding: 2px;
   }
 
   .selected {
-    top: 1px;
     background-position: 0 100%;
     background-image: linear-gradient(#ccc, #eee);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #000,
-      1px 1px 1px #000, white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px,
-      #9c9c9c 1px 2px 1px;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
   }
 
+  .selected:first-child {
+    border-left: 2px solid black;
+  }
+  .selected:last-child {
+    border-right: 2px solid black;
+  }
+
   .selected:hover {
     background-image: linear-gradient(#ccc, #eee);
-    top: 1px;
   }
 
   a {
@@ -42,6 +43,8 @@
     letter-spacing: 1px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #000,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px;
+    border-right: 1px;
+    border-left: 1px;
   }
 
   a:first-child {

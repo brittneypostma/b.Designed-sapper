@@ -6,4 +6,6 @@
   <title>Sapper project template</title>
 </svelte:head>
 
-<h1>home</h1>
+<div>
+  <h1>home</h1>
+</div>
