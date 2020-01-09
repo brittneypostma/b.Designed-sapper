@@ -48,8 +48,8 @@ Us on TV!
  This was a result show and they cut the artists down to the bottom three to find out who would be singing for a chance to be saved. The bottom three were Alex Guthrie, Kyndal Inskeep, and Hello Sunday. After the results, they cut to commercial break and the guy that warms up the audience came out towards the stage and said "Is there a Brittney Postma here?" My mouth dropped and then I started screaming and waving my arms until he saw where I was located and said "Alright, we will be with you in a few moments." I had no idea what that meant I started freaking out. I looked at my friend and utter shock. Kyndal was first to come out and sing and then Alex went up on stage. About halfway through his song, someone came over and introduced themselves to me. It was Chris Hines, the stage manager for The Voice and The Kelly Clarkson show. This was the friend of the guy I sat by on the airplane! I was floored! We talked for a few minutes about how much of a coincidence it was that I sat by him an exchanged introductions until someone messed up who they were supposed to cut to on the camera and he had to go do his job. He was very nice and I thought that was the end of it. Little did I know what was to come! The last ones to perform were Hello Sunday from Team Kelly. They saying All By Myself by Celine Dion, one of my all time songs from one of my favorite albums, and absolutely nailed it! They were the ones to get saved and I screamed so much that night, that I barely had a voice left the next day. After the show we exited the studio and waited on the trams in a back lot. We saw Gwen and Blake leave together and then we saw Kelly leave in the back of an SUV. 
  
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center; margin-bottom: 20px;">
-<img src="blog-images/kcs/margarita.jpg" alt="pineapple habanero margarita with popsicle in it" style="width: 50%; float: left;">
+<div id="mq" style="margin-bottom: 20px;">
+<img src="blog-images/kcs/margarita.jpg" alt="pineapple habanero margarita with popsicle in it" style="width: 50%;">
 <p>
 We loaded onto the trams that took us back up to City Walk. At this point we were starving and decided to grab some food and walk around a bit. We stopped at Antijitos, a Mexican restaurant, with amazing food and the best pineapple habanero margarita I've ever had. It came with a full popsicle inside of the margarita! 
 </p>
@@ -57,8 +57,8 @@ We loaded onto the trams that took us back up to City Walk. At this point we wer
 
 ---
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center; margin-top: 20px;">
-<p style="float: right;">
+<div id="mq" style="margin-top: 20px;">
+<p>
 The next day we had the entire day to kill. We wanted to do the tourist thing, we got subway passes and took it down to Hollywood Boulevard. We walked around for a while looking at stars, the Chinese Theater, and I saw a red carpet getting set up for that evening. We checked out Hollywood and Highland center and grabbed a cupcake from the Sprinkles vending machine.
 </p>
 <img src="blog-images/kcs/sprinkles.jpg" alt="Sprinkles cupcake vending machine at Hollywood and Highland" style="width: 50%; float: right;">

@@ -43,6 +43,13 @@
     color: whitesmoke;
   }
 
+  .content :global(#mq) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
   .content :global(hr) {
     height: 2px;
     border: 0;
@@ -102,6 +109,15 @@
     .post-page {
       width: 75%;
       margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .content :global(#mq) {
+      grid-template-columns: 1fr;
+    }
+    .content :global(p) {
+      float: none;
     }
   }
 </style>
