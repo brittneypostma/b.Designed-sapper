@@ -10,6 +10,7 @@
     height: 100%;
     display: grid;
     grid-template-rows: 60px 1fr;
+    height: 98.3vh;
   }
 
   main {
@@ -18,6 +19,7 @@
     margin: 1em auto 0;
     box-sizing: border-box;
     width: 100%;
+    background-color: #000;
     background: url("/me.png") no-repeat fixed bottom right;
   }
 
@@ -35,7 +37,7 @@
 
   .stars {
     background: #000 url(/stars.png) repeat;
-    z-index: -2;
+    z-index: -3;
     position: fixed;
     -moz-animation: move-twink-back 300s linear infinite;
     -ms-animation: move-twink-back 300s linear infinite;
@@ -46,13 +48,13 @@
 
   .twinkling {
     background: transparent url(/twinkling.png) repeat;
-    z-index: -1;
+    z-index: -2;
     position: fixed;
-    -moz-animation: move-twink-back 600s linear infinite;
-    -ms-animation: move-twink-back 600s linear infinite;
-    -o-animation: move-twink-back 600s linear infinite;
-    -webkit-animation: move-twink-back 600s linear infinite;
-    animation: move-twink-back 600s linear infinite;
+    -moz-animation: move-twink-back 400s linear infinite;
+    -ms-animation: move-twink-back 400s linear infinite;
+    -o-animation: move-twink-back 400s linear infinite;
+    -webkit-animation: move-twink-back 400s linear infinite;
+    animation: move-twink-back 400s linear infinite;
   }
 
   @keyframes move-twink-back {
@@ -101,6 +103,7 @@
   @media all and (max-device-width: 640px) {
     main {
       background: none;
+      background-color: #000;
     }
   }
 </style>

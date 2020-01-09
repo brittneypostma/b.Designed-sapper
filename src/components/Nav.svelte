@@ -4,12 +4,9 @@
 
 <style>
   nav {
-    position: fixed;
     display: flex;
     justify-content: center;
     padding: 2px;
-    width: 100%;
-    z-index: 5;
   }
 
   .selected {
