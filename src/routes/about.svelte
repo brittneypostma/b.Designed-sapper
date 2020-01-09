@@ -18,7 +18,7 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 600px) {
     div {
       grid-template-columns: 1fr;
       justify-items: center;
@@ -27,6 +27,18 @@
     }
     img {
       width: 75%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 1000px) {
+    div {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      width: 50%;
     }
   }
 </style>
