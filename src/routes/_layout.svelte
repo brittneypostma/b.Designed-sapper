@@ -13,7 +13,7 @@
     top: 0;
     background: transparent url(/twinkling.png) repeat;
     width: 100%;
-    height: 98.3vh;
+    height: 100%;
     animation: move-twink-back 500s linear infinite;
   }
   main {
@@ -23,7 +23,6 @@
     margin: 1em auto 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
   }
 
   @keyframes move-twink-back {
