@@ -6,35 +6,38 @@
 </script>
 
 <style>
-  div {
+  .grid {
     display: grid;
-    grid-template-rows: 60px 1fr 50px;
+    grid-template-rows: 60px 1fr 0;
     position: absolute;
     top: 0;
+    background: transparent url(/twinkling.png) repeat;
     width: 100%;
+    height: 98.3vh;
+    animation: move-twink-back 500s linear infinite;
   }
   main {
+    background: url("/me.png") no-repeat fixed bottom right;
     position: relative;
     padding: 2em;
     margin: 1em auto 0;
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
   }
 
-  .me {
+  /* .me {
     background: url("/me.png") no-repeat fixed bottom right;
     width: 100%;
     height: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-  }
+  } */
 
-  .twinkling {
+  /* .twinkling {
     background: transparent url(/twinkling.png) repeat;
     width: 100%;
     height: 100%;
     animation: move-twink-back 500s linear infinite;
-  }
+  } */
 
   @keyframes move-twink-back {
     from {
@@ -46,10 +49,10 @@
   }
 </style>
 
-<div class="twinkling" />
-<div class="me" />
+<!-- <div class="twinkling" /> -->
+<!-- <div class="me" /> -->
 
-<div>
+<div class="grid">
   <Nav {segment} />
   <main>
     <slot />
