@@ -1,5 +1,8 @@
 <style>
-
+  div {
+    margin: 0 auto;
+    width: 75%;
+  }
 </style>
 
 <svelte:head>

@@ -37,22 +37,22 @@
     background: #000 url(/stars.png) repeat;
     z-index: -2;
     position: fixed;
-    -moz-animation: move-twink-back 200s linear infinite;
-    -ms-animation: move-twink-back 200s linear infinite;
-    -o-animation: move-twink-back 200s linear infinite;
-    -webkit-animation: move-twink-back 200s linear infinite;
-    animation: move-twink-back 200s linear infinite;
+    -moz-animation: move-twink-back 300s linear infinite;
+    -ms-animation: move-twink-back 300s linear infinite;
+    -o-animation: move-twink-back 300s linear infinite;
+    -webkit-animation: move-twink-back 300s linear infinite;
+    animation: move-twink-back 300s linear infinite;
   }
 
   .twinkling {
     background: transparent url(/twinkling.png) repeat;
     z-index: -1;
     position: fixed;
-    -moz-animation: move-twink-back 400s linear infinite;
-    -ms-animation: move-twink-back 400s linear infinite;
-    -o-animation: move-twink-back 400s linear infinite;
-    -webkit-animation: move-twink-back 400s linear infinite;
-    animation: move-twink-back 400s linear infinite;
+    -moz-animation: move-twink-back 600s linear infinite;
+    -ms-animation: move-twink-back 600s linear infinite;
+    -o-animation: move-twink-back 600s linear infinite;
+    -webkit-animation: move-twink-back 600s linear infinite;
+    animation: move-twink-back 600s linear infinite;
   }
 
   @keyframes move-twink-back {
@@ -95,6 +95,12 @@
 
     to {
       transform: translateY(-2000px);
+    }
+  }
+
+  @media all and (max-device-width: 640px) {
+    main {
+      background: none;
     }
   }
 </style>

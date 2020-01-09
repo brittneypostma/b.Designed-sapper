@@ -58,6 +58,7 @@
   .content :global(p) {
     font-size: 2.25vh;
     font-weight: 100;
+    text-shadow: 2px 2px 1px black;
   }
 
   .content :global(pre) {

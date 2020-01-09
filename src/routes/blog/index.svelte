@@ -62,7 +62,7 @@
 </style>
 
 <svelte:head>
-  <title>Blog Posts</title>
+  <title>Blog</title>
 </svelte:head>
 
 <h1>blog</h1>
