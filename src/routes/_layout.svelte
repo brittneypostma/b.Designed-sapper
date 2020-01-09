@@ -15,7 +15,7 @@
   main {
     position: relative;
     padding: 2em;
-    margin: 0 auto;
+    margin: 1em auto 0;
     box-sizing: border-box;
     width: 100%;
     background: url("/me.png") no-repeat fixed bottom right;

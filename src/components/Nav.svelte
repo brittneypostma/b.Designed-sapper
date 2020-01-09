@@ -4,9 +4,12 @@
 
 <style>
   nav {
+    position: fixed;
     display: flex;
     justify-content: center;
     padding: 2px;
+    width: 100%;
+    z-index: 5;
   }
 
   .selected {
@@ -111,5 +114,4 @@
   <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
 
   <a class:selected={segment === 'contact'} href="contact">contact</a>
-
 </nav>
