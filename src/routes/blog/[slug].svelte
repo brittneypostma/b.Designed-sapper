@@ -35,6 +35,14 @@
     color: whitesmoke;
   }
 
+  .content :global(a) {
+    color: whitesmoke;
+  }
+
+  .content :global(a):visited {
+    color: whitesmoke;
+  }
+
   .content :global(hr) {
     height: 2px;
     border: 0;
@@ -44,8 +52,9 @@
   }
 
   .content :global(blockquote) {
-    background: #f9f9f9;
-    color: #777;
+    background: #111;
+    background: radial-gradient(ellipse at bottom, #111, rgb(0, 0, 0, 0.2));
+    color: whitesmoke;
     border-left: 10px solid#ccc;
     margin: 1.5em 10px;
     padding: 0.1em 10px;

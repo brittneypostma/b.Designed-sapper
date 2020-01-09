@@ -9,7 +9,7 @@
   div {
     height: 100%;
     display: grid;
-    grid-template-rows: 60px 1fr 50px;
+    grid-template-rows: 60px 1fr;
   }
 
   main {
