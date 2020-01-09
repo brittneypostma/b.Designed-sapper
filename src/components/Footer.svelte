@@ -30,6 +30,24 @@
     background-clip: text;
     color: transparent;
   }
+
+  p::before {
+    content: "";
+    position: absolute;
+    transition: transform 0.3s ease;
+    left: 12.5%;
+    bottom: 0;
+    top: 40px;
+    width: 75%;
+    height: 2px;
+    background: #aaa;
+    transform: scaleX(0);
+  }
+
+  p:hover::before {
+    background: rgb(168, 168, 168);
+    transform: scaleX(0.1);
+  }
 </style>
 
 <div>
