@@ -6,7 +6,7 @@
 </style>
 
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>b.Designed</title>
 </svelte:head>
 
 <div>
