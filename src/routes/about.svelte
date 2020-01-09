@@ -22,9 +22,11 @@
     div {
       grid-template-columns: 1fr;
       justify-items: center;
+      width: 100%;
+      text-align: center;
     }
     img {
-      width: 50%;
+      width: 75%;
     }
   }
 </style>

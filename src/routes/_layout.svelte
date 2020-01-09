@@ -6,12 +6,12 @@
 </script>
 
 <style>
-  div {
+  /* div {
     height: 100%;
     display: grid;
     grid-template-rows: 60px 1fr;
     height: 98.3vh;
-  }
+  } */
 
   main {
     position: relative;
@@ -19,8 +19,6 @@
     margin: 1em auto 0;
     box-sizing: border-box;
     width: 100%;
-    background-color: #000;
-    background: url("/me.png") no-repeat fixed bottom right;
   }
 
   .stars,
@@ -108,12 +106,10 @@
   }
 </style>
 
-<div>
-  <div class="stars" />
-  <div class="twinkling" />
-  <Nav {segment} />
-  <main>
-    <slot />
-  </main>
-  <Footer />
-</div>
+<div class="stars" />
+<div class="twinkling" />
+<Nav {segment} />
+<main>
+  <slot />
+</main>
+<Footer />

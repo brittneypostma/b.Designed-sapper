@@ -14,6 +14,7 @@ html {
 	-ms-overflow-style: none;
 	/* Internet Explorer 10+ */
 	overflow: -moz-scrollbars-none;
+	height: 100%;
 }
 
 
@@ -38,17 +39,19 @@ scroll-content::-webkit-scrollbar {
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: whitesmoke;
+	background-color: #000;
 	color: #eee;
-}
-
-html,
-body,
-main,
-#sapper {
 	height: 100%;
 }
 
+
+
+#sapper {
+	background: url("/me.png") no-repeat fixed bottom right;
+	display: grid;
+	grid-template-rows: 60px 1fr 50px;
+	height: 100%;
+}
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and
