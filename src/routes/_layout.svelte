@@ -26,19 +26,6 @@
     height: 100%;
   }
 
-  /* .me {
-    background: url("/me.png") no-repeat fixed bottom right;
-    width: 100%;
-    height: 100%;
-  } */
-
-  /* .twinkling {
-    background: transparent url(/twinkling.png) repeat;
-    width: 100%;
-    height: 100%;
-    animation: move-twink-back 500s linear infinite;
-  } */
-
   @keyframes move-twink-back {
     from {
       background-position: 0 0;
@@ -48,9 +35,6 @@
     }
   }
 </style>
-
-<!-- <div class="twinkling" /> -->
-<!-- <div class="me" /> -->
 
 <div class="grid">
   <Nav {segment} />
