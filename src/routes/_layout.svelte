@@ -97,13 +97,6 @@
       transform: translateY(-2000px);
     }
   }
-
-  @media all and (max-device-width: 640px) {
-    main {
-      background: none;
-      background-color: #000;
-    }
-  }
 </style>
 
 <div class="stars" />

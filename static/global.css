@@ -44,13 +44,17 @@ body {
 	height: 100%;
 }
 
-
-
 #sapper {
 	background: url("/me.png") no-repeat fixed bottom right;
 	display: grid;
 	grid-template-rows: 60px 1fr 50px;
 	height: 100%;
+}
+
+@media all and (max-device-width: 640px) {
+	#sapper {
+		background: none;
+	}
 }
 
 /**
