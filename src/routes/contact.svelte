@@ -1,16 +1,3 @@
-<script>
-  import { onMount } from "svelte";
-
-  onMount(() => {
-    let flap = document.getElementById("flap");
-    let envelope = document.getElementById("envelope");
-
-    envelope.addEventListener("click", function() {
-      flap.classList.toggle("open");
-    });
-  });
-</script>
-
 <style>
   .container {
     display: flex;
@@ -21,15 +8,15 @@
 
   .envelope {
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: 40%;
+    height: 500px;
     background: linear-gradient(#333, #000) 0 50%;
     top: 10%;
   }
   .flap {
     transition: 0.5s all linear;
     fill: rgb(255, 255, 255);
-    animation: open-flap 2s ease-in-out forwards;
+    animation: open-flap 5s ease-in-out forwards;
     transform-origin: 0 0 0;
   }
 
@@ -37,8 +24,11 @@
     0% {
       transform: rotateX(0deg);
     }
-    100% {
+    50% {
       transform: rotateX(180deg);
+    }
+    100% {
+      transform: rotateX(0deg);
     }
   }
 </style>
@@ -51,7 +41,7 @@
     <svg
       id="flap"
       class="flap"
-      height="50%"
+      height="35%"
       width="100%"
       viewBox="0 0 100 100"
       preserveAspectRatio="none">
