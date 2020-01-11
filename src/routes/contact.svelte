@@ -10,13 +10,13 @@
     position: relative;
     width: 40%;
     height: 500px;
-    background: linear-gradient(#333, #000) 0 50%;
+    background: radial-gradient(#222, #111) 0 50%;
     top: 10%;
   }
   .flap {
     transition: 0.5s all linear;
-    fill: rgb(255, 255, 255);
-    animation: open-flap 5s ease-in-out forwards;
+    fill: whitesmoke;
+    animation: open-flap 3s ease-in-out forwards;
     transform-origin: 0 0 0;
   }
 
@@ -41,7 +41,7 @@
     <svg
       id="flap"
       class="flap"
-      height="35%"
+      height="45%"
       width="100%"
       viewBox="0 0 100 100"
       preserveAspectRatio="none">

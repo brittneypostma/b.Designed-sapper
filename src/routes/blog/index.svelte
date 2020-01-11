@@ -65,7 +65,7 @@
   <title>Blog</title>
 </svelte:head>
 
-<h1>blog</h1>
+<h1>Blog Posts</h1>
 
 <div class="grid-logs">
   {#each posts as post}

@@ -47,12 +47,16 @@
   }
 
   .hlText {
+    border-radius: 0.2em;
     font-style: italic;
     margin: 0 0.5em;
+    color: rgb(226, 226, 226);
     transition: all 0.5s linear;
+    background-clip: text;
     background-color: rgba(0, 255, 255, 0.7);
-    padding: 0 0.5em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #111,
+    padding: 0 0.5em 0.1em;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
   }
 
@@ -60,7 +64,8 @@
     margin-left: 10px;
     font-style: italic;
     color: rgba(0, 255, 255, 0.7);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #111,
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.5), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
   }
 
@@ -72,8 +77,8 @@
     font-size: 4vh;
     width: 100%;
     height: 6vh;
-    border-radius: 0.4em;
-    background-image: linear-gradient(#111, #333);
+    border-radius: 0.2em;
+    background-image: radial-gradient(#222, #111);
     color: #bbb;
     letter-spacing: 1px;
   }
