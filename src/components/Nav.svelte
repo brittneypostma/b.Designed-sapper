@@ -14,6 +14,7 @@
   }
 
   .selected {
+    background-color: whitesmoke;
     background-position: 0 100%;
     background-image: linear-gradient(#ccc, #eee);
   }
@@ -46,8 +47,10 @@
     display: grid;
     position: relative;
     text-decoration: none;
+    background-color: #111;
     background: linear-gradient(#000, #333) 0 50%;
     background-size: 100% 200%;
+    background-position: 0 100%;
     color: #eee;
     text-align: center;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -67,7 +70,7 @@
   }
 
   a:hover {
-    background-image: linear-gradient(to top, #00ffff, #00ffff 25%, #000 30%);
+    background-image: linear-gradient(to top, #00ffff, #000 7%);
   }
 
   a::after {
