@@ -52,7 +52,6 @@
     margin: 0 0.5em;
     color: rgb(226, 226, 226);
     transition: all 0.5s linear;
-    background-clip: text;
     background-color: rgba(0, 255, 255, 0.7);
     padding: 0 0.5em 0.1em;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
