@@ -2,7 +2,18 @@
   h1 {
     letter-spacing: 0.2em;
   }
-  div {
+
+  p {
+    font-size: 3vh;
+    text-shadow: 2px 2px 1px black;
+  }
+
+  hr {
+    margin: 3em auto;
+    width: 75%;
+  }
+
+  .top {
     margin: 0 auto;
     width: 75%;
     display: grid;
@@ -12,50 +23,105 @@
     justify-content: center;
   }
 
-  p {
-    font-size: 3.5vh;
-    text-shadow: 2px 2px 1px black;
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2em;
+    justify-content: center;
+    justify-items: center;
+    width: 75%;
+    margin: 2em auto;
+    padding: 1em;
   }
 
-  img {
-    width: 85%;
+  .family {
+    width: 75%;
     transform: rotate(-15deg);
   }
 
+  .card-container {
+    height: 150px;
+    position: relative;
+    width: 150px;
+  }
+  .card {
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    width: 100%;
+    border-radius: 25%;
+    border: 5px solid rgba(241, 241, 241);
+    background-color: rgba(241, 241, 241);
+    box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.808);
+    color: #111;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .card .back {
+    transform: rotateY(180deg);
+  }
+
+  .side {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -2%;
+    font-size: 2vh;
+    text-align: center;
+  }
+
+  .icons-top {
+    width: 100%;
+  }
+
+  .icons-bottom {
+    width: 100%;
+  }
+
   @media only screen and (max-width: 600px) {
-    div {
+    .top {
       grid-template-columns: 1fr;
       justify-items: center;
       width: 100%;
       text-align: center;
     }
-    img {
+
+    .family {
       width: 75%;
       transform: none;
     }
   }
 
   @media only screen and (min-width: 600px) and (max-width: 1400px) {
-    div {
+    .top {
       grid-template-columns: 1fr;
       justify-items: center;
       width: 100%;
       text-align: center;
     }
-    img {
+    .family {
       width: 50%;
       transform: none;
     }
   }
 
   @media only screen and (min-width: 1001px) and (max-width: 1400px) {
-    div {
+    .top {
       grid-template-columns: 1fr;
       justify-items: center;
       width: 100%;
       text-align: center;
     }
-    img {
+    .family {
       width: 35%;
       transform: none;
     }
@@ -68,8 +134,8 @@
 
 <h1>About b.Designed</h1>
 
-<div>
-  <img src="family.png" alt="my family" />
+<div class="top">
+  <img src="family.png" alt="my family" class="family" />
   <p>
     I am a mom of 3 wonderful children and we live in the beautiful city of
     Holland, Michigan. I love developing web sites that are beautiful, that are
@@ -80,69 +146,84 @@
     and beer 🍻, well because mom life!
   </p>
 </div>
-<!-- <div className="right-about">
-          <h1>Skills</h1>
-          <div className="skill-div">
-            <div>
-              <img src={WebDev} alt="web dev" className="skills dev" />
-              <p>
-                Web <br />
-                Developer
-              </p>
-            </div>
-            <div>
-              <img
-                src={Graphic}
-                alt="graphic designer"
-                className="skills graphic"
-              />
-              <p>
-                Graphic
-                <br /> Designer
-              </p>
-            </div>
-            <div>
-              <img
-                src={Marketing}
-                alt="marketer"
-                className="skills marketing"
-              />
-              <p>
-                Digital
-                <br />
-                Marketer
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="bottom-about">
-          <div>
-            <p>FAST</p>
-            <img src={Fast} alt="fast" className="icons fast card-front" />
-          </div>
-          <div>
-            <p>RESPONSIVE</p>
-            <img
-              src={Responsive}
-              alt="responsive"
-              className="icons responsive card-front"
-            />
-          </div>
-          <div>
-            <p>INTUITIVE</p>
-            <img
-              src={Intuitive}
-              alt="intuitive"
-              className="icons intuitive card-front"
-            />
-          </div>
-          <div>
-            <p>DYNAMIC</p>
-            <img
-              src={Dynamic}
-              alt="dynamic"
-              className="icons dynamic card-front"
-            />
-          </div>
-        </div> -->
+<hr />
+
+<h1>Skills</h1>
+
+<div class="bottom">
+
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img src="/icons/webdev.png" alt="web dev" class="icons-top" />
+      </div>
+      <div class="side back">
+        Web
+        <br />
+        Developer
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img src="/icons/marketing.png" alt="marketer" class="icons-top" />
+      </div>
+      <div class="side back">Marketing</div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img
+          src="/icons/graphic.png"
+          alt="graphic designer"
+          class="icons-top" />
+      </div>
+      <div class="side back">
+        Graphic
+        <br />
+        Designer
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img src="/icons/fast.png" alt="fast" class="icons-bottom" />
+      </div>
+      <div class="side back">Fast</div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img
+          src="/icons/responsive.png"
+          alt="responsive"
+          class="icons-bottom" />
+      </div>
+      <div class="side back">Responsive</div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img src="/icons/intuitive.png" alt="intuitive" class="icons-bottom" />
+      </div>
+      <div class="side back">Intuitive</div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img src="/icons/dynamic.png" alt="dynamic" class="icons-bottom" />
+      </div>
+      <div class="side back">Dynamic</div>
+    </div>
+  </div>
+</div>
