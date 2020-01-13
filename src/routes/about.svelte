@@ -55,6 +55,12 @@
     background-color: rgba(241, 241, 241);
     box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.808);
     border-radius: 25%;
+    transform: translate3d(0, 0, 0);
+    perspective: 0;
+    backface-visibility: hidden;
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
   .card {
@@ -63,8 +69,12 @@
     transition: all 0.5s ease-in-out;
     position: absolute;
     width: 100%;
-    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    perspective: 0;
     backface-visibility: hidden;
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
     color: #111;
   }
 
