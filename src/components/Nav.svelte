@@ -14,7 +14,6 @@
   }
 
   .selected {
-    background-color: whitesmoke;
     background-position: 0 100%;
     background-image: linear-gradient(#ccc, #eee);
   }
@@ -47,7 +46,6 @@
     display: grid;
     position: relative;
     text-decoration: none;
-    background-color: #111;
     background: linear-gradient(#000, #333) 0 50%;
     background-size: 100% 200%;
     background-position: 0 100%;
@@ -76,6 +74,7 @@
   a::after {
     content: "";
     position: absolute;
+    top: 2px;
     left: 2px;
     width: calc(100% - 4px);
     height: 56px;
