@@ -89,10 +89,11 @@
     -webkit-transform: translate3d(0, 0, 0);
     visibility: visible;
     backface-visibility: hidden;
-    background: linear-gradient(#7c7c7c, #333);
+    color: #7c7c7c;
+    /* background: linear-gradient(#7c7c7c, #333);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
     font-size: 3vh;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-style: italic;
