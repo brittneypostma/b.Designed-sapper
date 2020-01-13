@@ -60,9 +60,9 @@
     position: absolute;
     width: 100%;
     border-radius: 25%;
-    border: 5px solid rgba(241, 241, 241);
-    background-color: rgba(241, 241, 241);
-    box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.808);
+    border: 5px solid rgb(241, 241, 241);
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 4px 8px 0 rgb(34, 34, 34, 0.808);
     color: #111;
   }
 
@@ -73,6 +73,9 @@
   .card .side {
     perspective: 0;
     transform: translate3d(0, 0, 0);
+    -ms-perspective: 0;
+    -ms-backface-visibility: hidden;
+    -ms-transform: translate3d(0, 0, 0);
     -webkit-perspective: 0;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
@@ -86,15 +89,15 @@
   .card .back {
     perspective: 0;
     transform: translate3d(0, 0, 0);
+    -ms-perspective: 0;
+    -ms-backface-visibility: hidden;
+    -ms-transform: translate3d(0, 0, 0);
     -webkit-perspective: 0;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     visibility: visible;
     backface-visibility: hidden;
-    background: linear-gradient(#7c7c7c, #333);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: black;
     font-size: 3vh;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-style: italic;
