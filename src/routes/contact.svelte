@@ -4,14 +4,15 @@
     align-items: center;
     justify-content: center;
     height: 75%;
+    margin: 0 auto;
   }
 
   .envelope {
+    margin-top: 0;
     position: relative;
     width: 40%;
     height: 500px;
     background: radial-gradient(#222, #111) 0 50%;
-    top: 10%;
   }
   .flap {
     transition: 0.5s all linear;
@@ -35,7 +36,6 @@
   @media only screen and (max-width: 600px) {
     .envelope {
       width: 100%;
-      height: 95%;
     }
   }
 
@@ -55,6 +55,8 @@
 <svelte:head>
   <title>Contact</title>
 </svelte:head>
+
+<h1>Contact Me</h1>
 <div class="container">
   <div id="envelope" class="envelope">
     <svg

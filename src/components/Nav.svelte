@@ -4,9 +4,13 @@
 
 <style>
   nav {
-    display: flex;
-    justify-content: center;
     padding: 2px;
+  }
+
+  .nav-cont {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    justify-content: center;
   }
 
   .selected {
@@ -41,7 +45,6 @@
     padding: 1em;
     display: grid;
     position: relative;
-    float: left;
     text-decoration: none;
     background: linear-gradient(#000, #333) 0 50%;
     background-size: 100% 200%;
@@ -99,16 +102,15 @@
 </style>
 
 <nav>
-  <a class:selected={segment === undefined} href=".">home</a>
+  <div class="nav-cont">
+    <a class:selected={segment === undefined} href=".">home</a>
 
-  <a class:selected={segment === 'about'} href="about">about</a>
+    <a class:selected={segment === 'about'} href="about">about</a>
 
-  <a class:selected={segment === 'portfolio'} href="portfolio">portfolio</a>
+    <a class:selected={segment === 'portfolio'} href="portfolio">portfolio</a>
 
-  <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
+    <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
 
-  <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
-
-  <a class:selected={segment === 'contact'} href="contact">contact</a>
+    <a class:selected={segment === 'contact'} href="contact">contact</a>
+  </div>
 </nav>

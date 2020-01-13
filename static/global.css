@@ -100,6 +100,13 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 	text-align: center;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 7px;
+	background: linear-gradient(#262626, #eaeaea, #262626);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
 /* Grouping content
