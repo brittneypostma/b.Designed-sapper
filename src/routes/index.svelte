@@ -86,6 +86,20 @@
   a:hover {
     background-image: linear-gradient(to top, #00ffff, transparent 10%);
   }
+
+  @media only screen and (min-width: 726px) and (max-width: 1000px) {
+    .cont {
+      font-size: 2vh;
+      width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 725px) {
+    .cont {
+      font-size: 1.5vh;
+      width: 95%;
+    }
+  }
 </style>
 
 <svelte:head>

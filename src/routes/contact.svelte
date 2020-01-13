@@ -25,10 +25,29 @@
       transform: rotateX(0deg);
     }
     50% {
-      transform: rotateX(180deg);
+      transform: rotateX(120deg);
     }
     100% {
       transform: rotateX(0deg);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .envelope {
+      width: 100%;
+      height: 95%;
+    }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .envelope {
+      width: 75%;
+    }
+  }
+
+  @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+    .envelope {
+      width: 70%;
     }
   }
 </style>

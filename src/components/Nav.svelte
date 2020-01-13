@@ -73,7 +73,7 @@
     position: absolute;
     left: 2px;
     width: calc(100% - 4px);
-    height: 100%;
+    height: 56px;
     background-image: radial-gradient(
         ellipse at top left,
         rgba(255, 255, 255, 0.2) 10%,

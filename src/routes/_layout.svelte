@@ -33,6 +33,12 @@
       background-position: 10000px 5000px;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    main {
+      background: none;
+    }
+  }
 </style>
 
 <div class="grid">

@@ -60,12 +60,25 @@
     transform: rotateY(180deg);
   }
   .card .side {
+    perspective: 0;
+    transform: translate3d(0, 0, 0);
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    visibility: visible;
     backface-visibility: hidden;
     height: 100%;
     position: absolute;
     width: 100%;
   }
   .card .back {
+    background: linear-gradient(#7c7c7c, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3vh;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
     transform: rotateY(180deg);
   }
 
