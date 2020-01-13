@@ -20,9 +20,9 @@
   }
 
   p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     transition: translateY(-50%);
     text-align: center;
-    font-family: sans-serif;
     font-style: italic;
     letter-spacing: 5px;
     background: linear-gradient(#262626, #eaeaea, #262626);

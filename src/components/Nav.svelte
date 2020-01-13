@@ -41,6 +41,9 @@
   }
 
   a {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
+    font-size: 1.8vh;
     transition: all 0.1s linear;
     padding: 1em;
     display: grid;
@@ -51,7 +54,6 @@
     background-position: 0 100%;
     color: #eee;
     text-align: center;
-    font-family: "Arial Black", Gadget, sans-serif;
     letter-spacing: 1px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
@@ -74,7 +76,7 @@
   a::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 0px;
     left: 2px;
     width: calc(100% - 4px);
     height: 56px;
