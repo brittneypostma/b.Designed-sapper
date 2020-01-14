@@ -16,7 +16,6 @@
     height: 100%;
     animation: move-twink-back 500s linear infinite;
   }
-
   main {
     background: url("/me.png") no-repeat fixed bottom right;
     position: relative;
