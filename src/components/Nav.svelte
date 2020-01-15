@@ -67,11 +67,11 @@
   }
 
   a:first-child {
-    border-radius: 0;
+    border-radius: 0.7em 0 0 0.7em;
   }
 
   a:last-child {
-    border-radius: 0;
+    border-radius: 0 0.7em 0.7em 0;
   }
 
   a:hover {
