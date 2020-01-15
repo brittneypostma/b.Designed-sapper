@@ -36,7 +36,6 @@
     content: "";
     position: absolute;
     z-index: 11;
-    transition: transform 0.3s ease;
     left: 12%;
     bottom: 0;
     top: 40px;
@@ -44,6 +43,7 @@
     height: 2px;
     background: #aaa;
     transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
 
   a {
@@ -130,6 +130,9 @@
   @media (max-width: 1000px) {
     .nav {
       background-color: #333;
+      background: linear-gradient(#000, #333) 0 50%;
+      background-size: 100% 200%;
+      background-position: 0 100%;
     }
     .nav-menu {
       width: 50px;
