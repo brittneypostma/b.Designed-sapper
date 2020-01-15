@@ -197,7 +197,7 @@
         <div class="side back">
           Web
           <br />
-          Developer
+          Development
         </div>
       </div>
     </div>
@@ -222,7 +222,7 @@
         <div class="side back">
           Graphic
           <br />
-          Designer
+          Design
         </div>
       </div>
     </div>
