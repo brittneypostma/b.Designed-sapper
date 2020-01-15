@@ -1,6 +1,14 @@
 <script>
+  import { onMount } from "svelte";
   import Nav from "../components/Nav.svelte";
+  import Spinner from "../components/Spinner.svelte";
   import Footer from "../components/Footer.svelte";
+
+  let loading = true;
+
+  onMount(() => {
+    loading = !loading;
+  });
 
   export let segment;
 </script>
@@ -42,9 +50,14 @@
 </style>
 
 <div class="grid">
+
   <Nav {segment} />
-  <main>
-    <slot />
-  </main>
+  {#if !loading}
+    <main>
+      <slot />
+    </main>
+  {:else}
+    <Spinner />
+  {/if}
   <Footer />
 </div>
