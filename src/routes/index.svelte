@@ -24,21 +24,35 @@
 <style>
   .cont {
     margin: 0 auto;
-    width: 75%;
+    width: 60%;
     height: 80%;
     display: grid;
     justify-content: center;
     align-content: center;
-    font-size: 2.5vh;
+    justify-items: flex-start;
+    font-size: 2.2vh;
+    font-style: italic;
   }
 
   .ind {
     display: flex;
+    width: 100%;
+    min-width: 500px;
   }
 
+  .ind:nth-child(2) {
+    margin-top: -25%;
+  }
+
+  .ind:nth-child(3) {
+    margin-top: -14%;
+  }
+
+  .ind:last-child {
+    margin-top: -4%;
+  }
   .bgText {
     text-align: center;
-    font-style: italic;
     letter-spacing: 7px;
     background: linear-gradient(#262626, #eaeaea, #262626);
     -webkit-background-clip: text;
@@ -48,24 +62,24 @@
 
   .hlText {
     border-radius: 0.2em;
-    font-style: italic;
-    margin: 0 0.5em;
     color: rgb(226, 226, 226);
     transition: all 0.5s linear;
-    background-color: rgba(0, 255, 255, 0.7);
     padding: 0 0.5em 0.1em;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
       3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
   }
 
-  .name {
-    margin-left: 10px;
-    font-style: italic;
+  .letter {
+    font-size: 100px;
     color: rgba(0, 255, 255, 0.7);
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
       3px 3px 3px rgba(0, 0, 0, 0.5), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
+  }
+
+  .name {
+    margin-left: -10px;
   }
 
   a {
@@ -73,11 +87,15 @@
     text-decoration: none;
     text-align: center;
     width: 100%;
+    justify-self: center;
     font-size: 4vh;
     width: 100%;
     height: 6vh;
     border-radius: 0.2em;
-    background-image: radial-gradient(#222, #111);
+    background-image: linear-gradient(
+      rgb(0, 255, 255, 0.9),
+      rgba(8, 112, 112, 0.5)
+    );
     color: #bbb;
     letter-spacing: 1px;
   }
@@ -91,12 +109,40 @@
       font-size: 1.8vh;
       width: 75%;
     }
+
+    .ind:nth-child(2) {
+      margin-top: -30%;
+    }
+
+    .ind:nth-child(3) {
+      margin-top: -15%;
+    }
+
+    .ind {
+      min-width: 375px;
+    }
   }
 
   @media only screen and (max-width: 799px) {
     .cont {
-      font-size: 1.5vh;
+      font-size: 1.4vh;
       width: 95%;
+    }
+
+    .ind {
+      min-width: 300px;
+    }
+
+    .ind:nth-child(2) {
+      margin-top: -20%;
+    }
+
+    .ind:nth-child(3) {
+      margin-top: -12%;
+    }
+
+    .letter {
+      font-size: 48px;
     }
   }
 </style>
@@ -107,14 +153,18 @@
 
 <div class="cont">
   <div class="ind">
-    <h1 class="bgText">Hello, I'm</h1>
+    <h1 class="bgText">Hi,</h1>
+  </div>
+  <div class="ind">
     <h1>
-      <span class="name">Brittney Postma</span>
+      I'm
+      <span class="letter">B</span>
+      <span class="name">rittney,</span>
     </h1>
   </div>
 
   <div class="ind">
-    <h2 class="bgText">owner at b.Designed</h2>
+    <h2 class="bgText">owner at b.Designed.</h2>
   </div>
 
   <div class="ind">
