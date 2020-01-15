@@ -54,7 +54,7 @@
   .bgText {
     text-align: center;
     letter-spacing: 7px;
-    background: linear-gradient(#262626, #eaeaea, #262626);
+    background: linear-gradient(#262626, #ffffff, #262626);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -84,6 +84,17 @@
 
   .name {
     margin-left: -10px;
+    color: rgb(226, 226, 226);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
+  }
+
+  .btnText {
+    color: rgb(226, 226, 226);
+    text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
   }
 
   a {
@@ -170,7 +181,7 @@
   </div>
   <div class="ind">
     <h1>
-      I'm
+      <span class="bgText">I'm</span>
       <span class="letter">B</span>
       <span class="name">rittney,</span>
     </h1>
@@ -189,7 +200,7 @@
 
   <div class="ind">
     <a href="portfolio">
-      <span class="bgText">View My Work</span>
+      <span class="btnText">View My Work</span>
     </a>
   </div>
 </div>

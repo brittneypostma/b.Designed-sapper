@@ -25,7 +25,7 @@
     text-align: center;
     font-style: italic;
     letter-spacing: 5px;
-    background: linear-gradient(#262626, #eaeaea, #262626);
+    background: linear-gradient(#262626, #ffffff, #262626);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
