@@ -37,11 +37,11 @@
   .ind {
     display: flex;
     width: 100%;
-    min-width: 500px;
+    min-width: 450px;
   }
 
   .ind:nth-child(2) {
-    margin-top: -25%;
+    margin-top: -29%;
   }
 
   .ind:nth-child(3) {
@@ -49,7 +49,7 @@
   }
 
   .ind:last-child {
-    margin-top: -4%;
+    margin-top: -5%;
   }
   .bgText {
     text-align: center;
@@ -58,6 +58,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  .sub-text {
+    font-size: 2vh;
   }
 
   .hlText {
@@ -93,8 +97,9 @@
     height: 6vh;
     border-radius: 0.2em;
     background-image: linear-gradient(
+      rgb(0, 255, 255, 0.6),
       rgb(0, 255, 255, 0.9),
-      rgba(8, 112, 112, 0.5)
+      rgb(0, 255, 255, 0.6)
     );
     color: #bbb;
     letter-spacing: 1px;
@@ -118,8 +123,12 @@
       margin-top: -15%;
     }
 
+    .ind:nth-child(4) {
+      font-size: 2vh;
+    }
+
     .ind {
-      min-width: 375px;
+      min-width: 400px;
     }
   }
 
@@ -130,7 +139,7 @@
     }
 
     .ind {
-      min-width: 300px;
+      min-width: 355px;
     }
 
     .ind:nth-child(2) {
@@ -139,6 +148,10 @@
 
     .ind:nth-child(3) {
       margin-top: -12%;
+    }
+
+    .ind:nth-child(4) {
+      font-size: 1.8vh;
     }
 
     .letter {
@@ -164,7 +177,7 @@
   </div>
 
   <div class="ind">
-    <h2 class="bgText">owner at b.Designed.</h2>
+    <h2 class="bgText sub-text">owner at b.Designed.</h2>
   </div>
 
   <div class="ind">
