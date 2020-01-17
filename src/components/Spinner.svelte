@@ -74,8 +74,7 @@
   }
   .planet .background {
     animation: translateBackground 40s infinite linear;
-    background-image: url(../planet.png),
-      radial-gradient(rgb(2, 231, 231), rgb(0, 66, 66));
+    background-image: radial-gradient(rgb(2, 231, 231), rgb(0, 66, 66));
     background-repeat: repeat-x;
     background-color: rgb(0, 255, 255);
     width: 300px;

@@ -13,6 +13,9 @@
     width: 40%;
     height: 500px;
     background: radial-gradient(#222, #111) 0 50%;
+
+    display: grid;
+    justify-items: center;
   }
   .flap {
     transition: 0.5s all linear;
@@ -24,7 +27,15 @@
   .form {
     position: absolute;
     top: 0;
-    max-width: 420px;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    justify-content: stretch;
+    align-content: center;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    font-size: 18px;
   }
 
   input[type="text"],
@@ -32,44 +43,58 @@
     color: white;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border: 2px solid #cc6666;
+    border: 2px solid #00cece;
     transition: all 0.3s;
     padding: 13px;
-    margin-bottom: 15px;
+    margin: 0;
     width: 100%;
     box-sizing: border-box;
     outline: 0;
   }
 
-  input[type="textarea"] {
-    height: 150px;
-    width: 100%;
+  input[type="email"] {
+    grid-column: 1/-1;
+  }
+
+  input[type="text"]:nth-child(4) {
+    grid-column: 1/-1;
+  }
+
+  textarea {
+    border-radius: 5px;
+    grid-column: 1/-1;
+    height: 100px;
     line-height: 150%;
     resize: vertical;
+    margin: 0;
+    vertical-align: top;
   }
 
   input[type="submit"] {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    grid-column: 1/-1;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 3px;
+    font-size: 3vh;
+    font-style: italic;
+    color: rgb(226, 226, 226);
+    text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
     width: 100%;
-    background: #cc6666;
+    background: #00cece;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    color: white;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
+    padding: 10px 0;
+    transition: all 0.3s ease-in;
   }
 
   input[type="submit"]:hover {
-    background: #cc4949;
+    background-color: #025f5f;
+    background-image: linear-gradient(to top, #00ffff, #000 7%);
   }
 
   @keyframes open-flap {
@@ -78,9 +103,11 @@
     }
     50% {
       transform: rotateX(120deg);
+      opacity: 1;
     }
     100% {
       transform: rotateX(0deg);
+      opacity: 0.2;
     }
   }
 
@@ -120,11 +147,11 @@
       <polygon points="0,0 100,0 50,100" />
     </svg>
     <form class="form" name="contact" method="POST" data-netlify="true">
-      <input type="text" name="first-name" placeholder="First Name" />
-      <input type="text" name="last-name" placeholder="Last Name" />
-      <input type="email" name="email" placeholder="Email" />
+      <input type="text" name="first-name" placeholder="First Name" required />
+      <input type="text" name="last-name" placeholder="Last Name" required />
+      <input type="email" name="email" placeholder="Email" required />
       <input type="text" name="subject" placeholder="Subject" />
-      <input type="textarea" name="message" placeholder="Message" />
+      <textarea name="message" placeholder="Message" required />
       <input type="submit" value="Send" />
     </form>
   </div>

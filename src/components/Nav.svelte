@@ -172,6 +172,7 @@
       left: 0px;
       padding: 0;
     }
+
     a {
       display: block;
       width: 100%;
@@ -196,6 +197,18 @@
     #nav-check:checked ~ .nav-links {
       height: 300px;
       overflow-y: auto;
+      animation: slide 0.5s linear;
+    }
+
+    @keyframes slide {
+      from {
+        opacity: 0;
+        top: -200px;
+      }
+      to {
+        opacity: 1;
+        top: 50px;
+      }
     }
   }
 </style>
@@ -213,10 +226,19 @@
     </div>
     <div class="nav-links">
       <a class:selected={segment === undefined} href=".">home</a>
-      <a class:selected={segment === 'about'} href="about">about</a>
-      <a class:selected={segment === 'portfolio'} href="portfolio">portfolio</a>
+      <a rel="prefetch" class:selected={segment === 'about'} href="about">
+        about
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'portfolio'}
+        href="portfolio">
+        portfolio
+      </a>
       <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
-      <a class:selected={segment === 'contact'} href="contact">contact</a>
+      <a rel="prefetch" class:selected={segment === 'contact'} href="contact">
+        contact
+      </a>
     </div>
   </div>
 </nav>
