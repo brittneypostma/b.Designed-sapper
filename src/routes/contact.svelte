@@ -59,7 +59,7 @@
     grid-column: 1/-1;
   }
 
-  input[type="text"]:nth-child(4) {
+  .subject {
     grid-column: 1/-1;
   }
 
@@ -147,10 +147,11 @@
       <polygon points="0,0 100,0 50,100" />
     </svg>
     <form class="form" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="first-name" placeholder="First Name" required />
       <input type="text" name="last-name" placeholder="Last Name" required />
       <input type="email" name="email" placeholder="Email" required />
-      <input type="text" name="subject" placeholder="Subject" />
+      <input type="text" name="subject" placeholder="Subject" class="subject" />
       <textarea name="message" placeholder="Message" required />
       <input type="submit" value="Send" />
     </form>
