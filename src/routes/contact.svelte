@@ -152,8 +152,8 @@
       method="POST"
       Content-Type="application/x-www-form-urlencoded"
       netlify
-      data-netlify-honeypot="bot-field"
-      action="/contact">
+      data-netlify-honeypot="bot-field">
+      <!-- action="/contact" -->
       <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="first-name" placeholder="First Name" required />
       <input type="text" name="last-name" placeholder="Last Name" required />
