@@ -146,14 +146,15 @@
       preserveAspectRatio="none">
       <polygon points="0,0 100,0 50,100" />
     </svg>
+
     <form
       class="form"
       name="contact"
       method="POST"
+      action="thankyou"
       Content-Type="application/x-www-form-urlencoded"
       netlify
       netlify-honeypot="bot-field">
-      <!-- action="/contact" -->
       <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="first-name" placeholder="First Name" required />
       <input type="text" name="last-name" placeholder="Last Name" required />
@@ -163,5 +164,4 @@
       <input type="submit" name="submit" value="Send" />
     </form>
   </div>
-
 </div>
