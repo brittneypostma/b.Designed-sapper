@@ -118,12 +118,9 @@
         <img src="portfolio/logs.png" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Console Logs</h3>
-          <p class="content-text">
-            A site for all of my programming notes.
-            <br />
-            Built with Svelte and Sapper.
-          </p>
-          <p>Click to view.</p>
+          <p class="content-text">A site for all of my programming notes.</p>
+          <p>Built with Svelte and Sapper.</p>
+          <p>Click to view webpage.</p>
         </div>
       </a>
     </div>
@@ -136,68 +133,79 @@
         <img src="portfolio/crwn.png" alt="CRWN-CLOTHING" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">CRWN-Clothing</h3>
-          <p class="content-text">A mock e-commerce app built with React.</p>
-          <p>Click to view.</p>
+          <p class="content-text">A mock e-commerce app.</p>
+          <p>Built with React.</p>
+          <p>Click to view webpage.</p>
         </div>
       </a>
     </div>
     <div class="content">
-      <a
-        href="https://unsplash.com/photos/HkTMcmlMOUQ"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="content-overlay" />
-        <img src="portfolio/zoo.png" alt="Waukazoo Check In" width="100%" />
-        <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Check In System</h3>
-          <p class="content-text">
-            A check in system for volunteers at a school.
-            <br />
-            Built with Svelte and Sapper.
-          </p>
-          <p>Click to view.</p>
-        </div>
-      </a>
+
+      <div class="content-overlay" />
+      <img src="portfolio/zoo.png" alt="Waukazoo Check In" width="100%" />
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Check In System</h3>
+        <p class="content-text">
+          A check in system for volunteers at a school.
+        </p>
+        <p>Built with Svelte and Sapper.</p>
+        <p>
+          Due to the private content of the site,
+          <br />
+          this webpage is unable to be viewed.
+        </p>
+      </div>
     </div>
     <div class="content">
       <a
-        href="https://unsplash.com/photos/HkTMcmlMOUQ"
+        href="https://sballgirl11.github.io/"
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
         <img src="portfolio/piano.png" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">This is a title</h3>
-          <p class="content-text">This is a short description</p>
-          <p>Click to view.</p>
+          <h3 class="content-title">Piano Kit</h3>
+          <p class="content-text">
+            A clickable and keyboard enabled piano kit.
+          </p>
+          <p>Built with JavaScript.</p>
+          <p>Click to view webpage.</p>
         </div>
       </a>
     </div>
     <div class="content">
       <a
-        href="https://unsplash.com/photos/HkTMcmlMOUQ"
+        href="https://codepen.io/sballgirl11/pen/PvYqmL"
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
         <img src="portfolio/drum.png" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">This is a title</h3>
-          <p class="content-text">This is a short description</p>
-          <p>Click to view.</p>
+          <h3 class="content-title">Drum Kit</h3>
+          <p class="content-text">
+            A drum kit that can be played by pressing keys on the keyboard.
+          </p>
+          <p>From the JS30 course by Wes Bos.</p>
+          <p>Built with JavaScript</p>
+
+          <p>Click to view webpage.</p>
         </div>
       </a>
     </div>
     <div class="content">
       <a
-        href="https://unsplash.com/photos/HkTMcmlMOUQ"
+        href="https://codepen.io/sballgirl11/pen/bPozoK"
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
         <img src="portfolio/quote.png" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">This is a title</h3>
-          <p class="content-text">This is a short description</p>
-          <p>Click to view.</p>
+          <h3 class="content-title">Random Quote Generator</h3>
+          <p class="content-text">
+            A random quote generator with a color changing background.
+          </p>
+          <p>Built with JavaScript.</p>
+          <p>Click to view webpage.</p>
         </div>
       </a>
     </div>
