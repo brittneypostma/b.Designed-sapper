@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: "07-28-2019"
-image: "blog-images/photo.png"
+image: "blog-images/photo.jpg"
 alt: "My picture"
 ---
 
