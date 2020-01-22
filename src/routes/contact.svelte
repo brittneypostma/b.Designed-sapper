@@ -43,6 +43,19 @@
     margin: 0;
     font-size: 18px;
   }
+  input[placeholder],
+  [placeholder],
+  *[placeholder] {
+    color: rgb(0, 255, 255) !important;
+  }
+
+  textarea[placeholder] {
+    color: black !important;
+  }
+
+  #first-name {
+    grid-column: 1/1;
+  }
 
   input[type="text"],
   input[type="email"] {
@@ -61,17 +74,21 @@
     outline: 0;
   }
 
-  input[type="email"] {
+  #email {
     grid-column: 1/-1;
   }
 
-  .subject {
+  #subject {
     grid-column: 1/-1;
+  }
+
+  #message {
+    grid-column: 1/-1;
+    display: grid;
   }
 
   textarea {
     border-radius: 5px;
-    grid-column: 1/-1;
     height: 100px;
     line-height: 150%;
     resize: vertical;
@@ -79,8 +96,11 @@
     vertical-align: top;
   }
 
-  input[type="submit"] {
+  #submit {
     grid-column: 1/-1;
+  }
+
+  input[type="submit"] {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     letter-spacing: 3px;
     font-size: 3vh;
@@ -161,13 +181,42 @@
       Content-Type="application/x-www-form-urlencoded"
       netlify
       netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="first-name" placeholder="First Name" required />
-      <input type="text" name="last-name" placeholder="Last Name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="text" name="subject" placeholder="Subject" class="subject" />
-      <textarea name="message" placeholder="Message" required />
-      <input type="submit" name="submit" value="Send" />
+      <label for="form-name" id="form-name">
+        <input type="hidden" name="form-name" value="contact" />
+      </label>
+      <label for="first-name" id="first-name">
+        <input
+          class="text"
+          type="text"
+          name="first-name"
+          placeholder="First Name"
+          required />
+      </label>
+      <label for="last-name" id="last-name">
+        <input
+          class="text"
+          type="text"
+          name="last-name"
+          placeholder="Last Name"
+          required />
+      </label>
+      <label for="email" id="email">
+        <input
+          class="text"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required />
+      </label>
+      <label for="subject" id="subject">
+        <input class="text" type="text" name="subject" placeholder="Subject" />
+      </label>
+      <label for="message" id="message">
+        <textarea name="message" placeholder="Message" required />
+      </label>
+      <label for="submit" id="submit">
+        <input type="submit" name="submit" value="Send" />
+      </label>
     </form>
   </div>
 </div>
