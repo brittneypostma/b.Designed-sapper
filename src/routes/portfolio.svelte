@@ -100,6 +100,16 @@
   .fadeIn-bottom {
     top: 80%;
   }
+
+  @media only screen and (max-width: 800px) {
+    .cont {
+      width: 95%;
+    }
+
+    .blocks {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
 </style>
 
 <svelte:head>
