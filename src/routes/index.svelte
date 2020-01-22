@@ -45,7 +45,7 @@
   }
 
   .ind:nth-child(3) {
-    margin-top: -14%;
+    margin-top: -13%;
   }
 
   .ind:last-child {
@@ -107,6 +107,7 @@
     width: 100%;
     height: 6vh;
     border-radius: 0.2em;
+
     background-image: linear-gradient(
       rgb(0, 255, 255, 0.6),
       rgb(0, 255, 255, 0.9),
@@ -116,7 +117,18 @@
     letter-spacing: 1px;
   }
 
+  @supports (-ms-ime-align: auto) {
+    a {
+      background-image: linear-gradient(
+        rgb(2, 109, 109),
+        rgb(0, 255, 255),
+        rgb(2, 109, 109)
+      );
+    }
+  }
+
   a:hover {
+    background-color: transparent;
     background-image: linear-gradient(to top, #00ffff, transparent 10%);
   }
 
@@ -131,7 +143,7 @@
     }
 
     .ind:nth-child(3) {
-      margin-top: -15%;
+      margin-top: -14%;
     }
 
     .ind:nth-child(4) {
@@ -150,19 +162,20 @@
     }
 
     .ind {
-      min-width: 355px;
+      min-width: 375px;
     }
 
     .ind:nth-child(2) {
-      margin-top: -20%;
+      margin-top: -16%;
     }
 
     .ind:nth-child(3) {
-      margin-top: -12%;
+      margin-top: -9%;
     }
 
     .ind:nth-child(4) {
       font-size: 1.8vh;
+      margin-bottom: 1%;
     }
 
     .letter {

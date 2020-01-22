@@ -61,6 +61,20 @@
     opacity: 1;
   }
 
+  @supports (-ms-ime-align: auto) {
+    .content-overlay {
+      background-image: linear-gradient(
+        to top,
+        rgb(2, 83, 83),
+        rgb(0, 0, 0) 90%
+      );
+    }
+
+    .content:hover .content-overlay {
+      opacity: 0.7;
+    }
+  }
+
   .content-details {
     position: absolute;
     text-align: center;

@@ -24,6 +24,12 @@
     transform-origin: 0 0 0;
   }
 
+  @supports (-ms-ime-align: auto) {
+    .flap {
+      height: 200px;
+    }
+  }
+
   .form {
     position: absolute;
     top: 0;
