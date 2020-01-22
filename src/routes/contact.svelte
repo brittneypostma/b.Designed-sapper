@@ -31,16 +31,18 @@
   }
 
   .form {
+    letter-spacing: 2px;
     position: absolute;
-    top: 0;
+    top: -10px;
     width: 90%;
     height: 100%;
     display: grid;
     justify-content: stretch;
-    align-content: center;
+    align-content: flex-start;
     grid-gap: 1em;
     grid-template-columns: 1fr 1fr;
     margin: 0;
+    padding: 0;
     font-size: 18px;
   }
 
@@ -57,19 +59,23 @@
   input[placeholder],
   [placeholder],
   *[placeholder] {
+    letter-spacing: 1.5px;
     color: rgb(0, 255, 255) !important;
   }
 
   textarea[placeholder] {
+    letter-spacing: 1.5px;
     color: black !important;
   }
 
   ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
+    letter-spacing: 1.5px;
     color: rgb(0, 255, 255) !important;
   }
 
   textarea::-webkit-input-placeholder {
+    letter-spacing: 1.5px;
     color: rgb(0, 0, 0) !important;
   }
 

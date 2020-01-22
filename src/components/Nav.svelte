@@ -5,12 +5,13 @@
 <style>
   .nav {
     width: 100%;
-    height: 50px;
+    height: 57px;
     position: fixed;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(#000, #333, #000) 0 50%;
   }
   .nav-title {
     display: flex;
@@ -41,7 +42,7 @@
     top: 40px;
     width: 75%;
     height: 2px;
-    background: #aaa;
+    /* background: #aaa; */
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -54,9 +55,9 @@
     display: grid;
     position: relative;
     text-decoration: none;
-    background: linear-gradient(#000, #333) 0 50%;
+    /* background: linear-gradient(#000, #333) 0 50%;
     background-size: 100% 200%;
-    background-position: 0 100%;
+    background-position: 0 100%; */
     color: #eee;
     text-align: center;
     letter-spacing: 1px;
@@ -65,17 +66,17 @@
     border-right: 1px;
     border-left: 1px;
   }
-
+  /* 
   a:first-child {
     border-radius: 0.7em 0 0 0.7em;
   }
 
   a:last-child {
     border-radius: 0 0.7em 0.7em 0;
-  }
+  } */
 
   a:hover {
-    background-image: linear-gradient(to top, #00ffff, #000 7%);
+    background-image: linear-gradient(to top, transparent, #00ffff 95%);
   }
 
   a::after {
@@ -86,7 +87,7 @@
     left: 2px;
     width: calc(100% - 4px);
     height: 56px;
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
         ellipse at top left,
         rgba(255, 255, 255, 0.2) 10%,
         transparent,
@@ -97,21 +98,21 @@
         rgba(250, 250, 250, 0.1) 10%,
         transparent,
         transparent
-      );
+      ); */
     border-radius: 0;
   }
 
-  a:first-child::after {
+  /* a:first-child::after {
     border-radius: 0.7em 0 0 0.7em;
   }
 
   a:last-child::after {
     border-radius: 0 0.7em 0.7em 0;
-  }
+  } */
 
   .selected {
     background-position: 0 100%;
-    background-image: linear-gradient(#ccc, #eee);
+    background-image: linear-gradient(#ccc, whitesmoke, #ccc, transparent 90%);
   }
 
   .selected::before {
@@ -120,7 +121,7 @@
   }
 
   .selected:hover {
-    background-image: linear-gradient(#ccc, #eee);
+    background-image: linear-gradient(#ccc, whitesmoke, #ccc, transparent 90%);
   }
 
   #nav-check {
