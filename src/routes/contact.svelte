@@ -57,33 +57,8 @@
     /* Chrome/Opera/Safari */
     color: rgb(0, 255, 255) !important;
   }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgb(0, 255, 255) !important;
-  }
-  :-ms-input-placeholder {
-    /* IE 10+ */
-    color: rgb(0, 255, 255) !important;
-  }
-  :-moz-placeholder {
-    /* Firefox 18- */
-    color: rgb(0, 255, 255) !important;
-  }
 
   textarea::-webkit-input-placeholder {
-    color: rgb(0, 0, 0) !important;
-  }
-
-  textarea::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgb(0, 0, 0) !important;
-  }
-  textarea:-ms-input-placeholder {
-    /* IE 10+ */
-    color: rgb(0, 0, 0) !important;
-  }
-  textarea:-moz-placeholder {
-    /* Firefox 18- */
     color: rgb(0, 0, 0) !important;
   }
 
@@ -139,12 +114,16 @@
     letter-spacing: 3px;
     font-size: 3vh;
     font-style: italic;
-    color: rgb(226, 226, 226);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
       3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
     width: 100%;
-    background: #00cece;
+    background-image: linear-gradient(
+      rgb(2, 109, 109),
+      rgb(1, 233, 233),
+      rgb(2, 109, 109)
+    );
     border-radius: 5px;
     border: 0;
     cursor: pointer;

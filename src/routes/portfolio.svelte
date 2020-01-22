@@ -139,7 +139,7 @@
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
-        <img src="portfolio/logs.png" alt="Console Logs" width="100%" />
+        <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Console Logs</h3>
           <p class="content-text">A site for all of my programming notes.</p>
@@ -154,7 +154,7 @@
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
-        <img src="portfolio/crwn.png" alt="CRWN-CLOTHING" width="100%" />
+        <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">CRWN-Clothing</h3>
           <p class="content-text">A mock e-commerce app.</p>
@@ -166,7 +166,7 @@
     <div class="content">
 
       <div class="content-overlay" />
-      <img src="portfolio/zoo.png" alt="Waukazoo Check In" width="100%" />
+      <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
       <div class="content-details fadeIn-bottom">
         <h3 class="content-title">Check In System</h3>
         <p class="content-text">
@@ -186,7 +186,7 @@
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
-        <img src="portfolio/piano.png" alt="Console Logs" width="100%" />
+        <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Piano Kit</h3>
           <p class="content-text">
@@ -203,7 +203,7 @@
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
-        <img src="portfolio/drum.png" alt="Console Logs" width="100%" />
+        <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Drum Kit</h3>
           <p class="content-text">
@@ -222,7 +222,7 @@
         target="_blank"
         rel="noopener noreferrer">
         <div class="content-overlay" />
-        <img src="portfolio/quote.png" alt="Console Logs" width="100%" />
+        <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Random Quote Generator</h3>
           <p class="content-text">

@@ -170,7 +170,7 @@
 <h1>About b.Designed</h1>
 
 <div class="top">
-  <img src="family.png" alt="my family" class="family" />
+  <img src="family.jpg" alt="my family" class="family" />
   <p>
     I am a mom of 3 wonderful children and we live in the beautiful city of
     Holland, Michigan. I love developing web sites that are beautiful, that are

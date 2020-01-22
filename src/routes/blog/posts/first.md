@@ -6,7 +6,7 @@ alt: "My picture"
 ---
 
 <p align='center'>
-<img src="blog-images/photo.png" alt="My picture" width="50%">
+<img src="blog-images/photo.jpg" alt="My picture" width="50%">
 </p>
 
 I just launched my portfolio!
