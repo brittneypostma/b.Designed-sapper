@@ -43,6 +43,17 @@
     margin: 0;
     font-size: 18px;
   }
+
+  label {
+    text-align: center;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
+  }
+
   input[placeholder],
   [placeholder],
   *[placeholder] {
@@ -69,14 +80,14 @@
   input[type="text"],
   input[type="email"] {
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: 500;
     border-radius: 5px;
-    line-height: 22px;
+    line-height: 18px;
     background-color: transparent;
     border: 2px solid #00cece;
     transition: all 0.3s;
-    padding: 13px;
+    padding: 10px;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
@@ -99,7 +110,7 @@
   textarea {
     border-radius: 5px;
     height: 100px;
-    line-height: 150%;
+    line-height: 125%;
     resize: vertical;
     margin: 0;
     vertical-align: top;
@@ -198,6 +209,7 @@
         <input type="hidden" name="form-name" value="contact" />
       </label>
       <label for="first-name" id="first-name">
+        First Name
         <input
           class="text"
           type="text"
@@ -206,6 +218,7 @@
           required />
       </label>
       <label for="last-name" id="last-name">
+        Last Name
         <input
           class="text"
           type="text"
@@ -214,6 +227,7 @@
           required />
       </label>
       <label for="email" id="email">
+        Email
         <input
           class="text"
           type="email"
@@ -222,9 +236,11 @@
           required />
       </label>
       <label for="subject" id="subject">
+        Subject
         <input class="text" type="text" name="subject" placeholder="Subject" />
       </label>
       <label for="message" id="message">
+        Message
         <textarea name="message" placeholder="Message" required />
       </label>
       <label for="submit" id="submit">
