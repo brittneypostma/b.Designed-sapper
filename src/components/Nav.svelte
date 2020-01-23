@@ -1,5 +1,7 @@
 <script>
   export let segment;
+
+  let clicked = false;
 </script>
 
 <style>
@@ -128,7 +130,7 @@
     display: none;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 850px) {
     .nav {
       background-color: #333;
       background: linear-gradient(#000, #333) 0 50%;
@@ -177,6 +179,7 @@
     a {
       display: block;
       width: 100%;
+      border-bottom: 1px solid black;
     }
     a:first-child {
       border-radius: 0;
@@ -192,6 +195,7 @@
     a:last-child::after {
       border-radius: 0 0.7em 0.7em 0;
     }
+
     #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
@@ -216,7 +220,11 @@
 
 <nav>
   <div class="nav">
-    <input type="checkbox" id="nav-check" />
+    <input
+      type="checkbox"
+      id="nav-check"
+      bind:checked={clicked}
+      on:click={() => (clicked = !clicked)} />
     <div class="nav-title">
       <img src="logo-192.png" alt="logo" class="logo" />
     </div>
@@ -226,18 +234,38 @@
       </label>
     </div>
     <div class="nav-links">
-      <a class:selected={segment === undefined} href=".">home</a>
-      <a rel="prefetch" class:selected={segment === 'about'} href="about">
+      <a
+        class:selected={segment === undefined}
+        href="."
+        on:click={() => (clicked = !clicked)}>
+        home
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'about'}
+        href="about"
+        on:click={() => (clicked = !clicked)}>
         about
       </a>
       <a
         rel="prefetch"
         class:selected={segment === 'portfolio'}
-        href="portfolio">
+        href="portfolio"
+        on:click={() => (clicked = !clicked)}>
         portfolio
       </a>
-      <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
-      <a rel="prefetch" class:selected={segment === 'contact'} href="contact">
+      <a
+        rel="prefetch"
+        class:selected={segment === 'blog'}
+        href="blog"
+        on:click={() => (clicked = !clicked)}>
+        blog
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'contact'}
+        href="contact"
+        on:click={() => (clicked = !clicked)}>
         contact
       </a>
     </div>

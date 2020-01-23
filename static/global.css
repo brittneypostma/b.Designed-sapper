@@ -46,6 +46,16 @@ body {
 	animation: move-twink-back 300s linear infinite;
 }
 
+@media (max-width: 600px) {
+	body {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
 
 
 /* .stars,

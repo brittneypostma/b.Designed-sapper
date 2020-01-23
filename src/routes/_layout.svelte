@@ -46,6 +46,14 @@
     main {
       background: none;
     }
+
+    .grid {
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+    }
   }
 </style>
 

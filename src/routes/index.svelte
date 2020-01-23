@@ -158,11 +158,11 @@
   @media only screen and (max-width: 799px) {
     .cont {
       font-size: 1.4vh;
-      width: 95%;
+      width: 100%;
     }
 
     .ind {
-      min-width: 375px;
+      min-width: 350px;
     }
 
     .ind:nth-child(2) {
