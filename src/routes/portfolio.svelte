@@ -136,6 +136,43 @@
     .blocks {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+
+    .mobile-content {
+      display: grid;
+      justify-content: flex-end;
+      text-align: center;
+      height: 100%;
+      grid-template-rows: 200px 200px;
+    }
+
+    .mobile-content > a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    .mobile-links {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      align-items: stretch;
+    }
+
+    .mobile-links > button {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      color: whitesmoke;
+      background-image: linear-gradient(
+        rgb(3, 87, 87),
+        rgb(0, 255, 255),
+        rgb(3, 87, 87)
+      );
+      outline: none;
+      border: none;
+      width: 100%;
+      font-size: 24px;
+      text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
+        3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
+        #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
+    }
   }
 </style>
 
@@ -147,20 +184,22 @@
   <h1>Portfolio</h1>
   <div class="blocks">
     {#if mobile}
-      <div class="content">
-        <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
-      </div>
-      <a
-        href="https://console-logs.netlify.com/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Console Logs</h3>
-          <p class="content-text">A site for all of my programming notes.</p>
-          <p>Built with Svelte and Sapper.</p>
-          <p>Click to view webpage.</p>
+      <div class="mobile-content">
+        <div>
+          <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
         </div>
-      </a>
+        <a
+          href="https://console-logs.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="mobile-links">
+            <h3>Console Logs</h3>
+            <p>A site for all of my programming notes.</p>
+            <p>Built with Svelte and Sapper.</p>
+            <button>View Webpage.</button>
+          </div>
+        </a>
+      </div>
     {:else}
       <div class="content">
         <a
@@ -179,91 +218,188 @@
       </div>
     {/if}
 
-    <div class="content">
-      <a
-        href="https://crwn-clothing-react.herokuapp.com/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="content-overlay" />
-        <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
-        <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">CRWN-Clothing</h3>
-          <p class="content-text">A mock e-commerce app.</p>
-          <p>Built with React.</p>
-          <p>Click to view webpage.</p>
+    {#if mobile}
+      <div class="mobile-content">
+        <div>
+          <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
         </div>
-      </a>
-    </div>
-    <div class="content">
-
-      <div class="content-overlay" />
-      <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
-      <div class="content-details fadeIn-bottom">
-        <h3 class="content-title">Check In System</h3>
-        <p class="content-text">
-          A check in system for volunteers at a school.
-        </p>
-        <p>Built with Svelte and Sapper.</p>
-        <p>
-          Due to the private content of the site,
-          <br />
-          this webpage is unable to be viewed.
-        </p>
+        <a
+          href="https://crwn-clothing-react.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="mobile-links">
+            <h3>CRWN-Clothing</h3>
+            <p>A mock e-commerce app.</p>
+            <p>Built with React.</p>
+            <button>Click to view webpage.</button>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="content">
-      <a
-        href="https://sballgirl11.github.io/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="content-overlay" />
-        <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
-        <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Piano Kit</h3>
-          <p class="content-text">
-            A clickable and keyboard enabled piano kit.
-          </p>
-          <p>Built with JavaScript.</p>
-          <p>Click to view webpage.</p>
-        </div>
-      </a>
-    </div>
-    <div class="content">
-      <a
-        href="https://codepen.io/sballgirl11/pen/PvYqmL"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="content-overlay" />
-        <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
-        <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Drum Kit</h3>
-          <p class="content-text">
-            A drum kit that can be played by pressing keys on the keyboard.
-          </p>
-          <p>From the JS30 course by Wes Bos.</p>
-          <p>Built with JavaScript</p>
+    {:else}
+      <div class="content">
+        <a
+          href="https://crwn-clothing-react.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="content-overlay" />
+          <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">CRWN-Clothing</h3>
+            <p class="content-text">A mock e-commerce app.</p>
+            <p>Built with React.</p>
+            <p>Click to view webpage.</p>
+          </div>
+        </a>
+      </div>
+    {/if}
 
-          <p>Click to view webpage.</p>
+    {#if mobile}
+      <div class="mobile-content">
+        <div>
+          <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
         </div>
-      </a>
-    </div>
-    <div class="content">
-      <a
-        href="https://codepen.io/sballgirl11/pen/bPozoK"
-        target="_blank"
-        rel="noopener noreferrer">
-        <div class="content-overlay" />
-        <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
-        <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Random Quote Generator</h3>
-          <p class="content-text">
-            A random quote generator with a color changing background.
+        <div class="mobile-links">
+          <h3>Check In System</h3>
+          <p>A check in system for volunteers at a school.</p>
+          <p>Built with Svelte and Sapper.</p>
+          <p>
+            Due to the private content of the site,
+            <br />
+            this webpage is unable to be viewed.
           </p>
-          <p>Built with JavaScript.</p>
-          <p>Click to view webpage.</p>
         </div>
-      </a>
-    </div>
+      </div>
+    {:else}
+      <div class="content">
 
+        <div class="content-overlay" />
+        <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Check In System</h3>
+          <p class="content-text">
+            A check in system for volunteers at a school.
+          </p>
+          <p>Built with Svelte and Sapper.</p>
+          <p>
+            Due to the private content of the site,
+            <br />
+            this webpage is unable to be viewed.
+          </p>
+        </div>
+      </div>
+    {/if}
+    {#if mobile}
+      <div class="mobile-content">
+        <div>
+          <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
+        </div>
+        <a
+          href="https://sballgirl11.github.io/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="mobile-links">
+            <h3>Piano Kit</h3>
+            <p>A clickable and keyboard enabled piano kit.</p>
+            <p>Built with JavaScript.</p>
+            <button>Click to view webpage.</button>
+          </div>
+        </a>
+      </div>
+    {:else}
+      <div class="content">
+        <a
+          href="https://sballgirl11.github.io/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="content-overlay" />
+          <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Piano Kit</h3>
+            <p class="content-text">
+              A clickable and keyboard enabled piano kit.
+            </p>
+            <p>Built with JavaScript.</p>
+            <p>Click to view webpage.</p>
+          </div>
+        </a>
+      </div>
+    {/if}
+    {#if mobile}
+      <div class="mobile-content">
+        <div>
+          <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
+        </div>
+        <a
+          href="https://codepen.io/sballgirl11/pen/PvYqmL"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="mobile-links">
+            <h3>Drum Kit</h3>
+            <p>
+              A drum kit that can be played by pressing keys on the keyboard.
+            </p>
+            <p>Built with JavaScript</p>
+
+            <button>Click to view webpage.</button>
+          </div>
+        </a>
+      </div>
+    {:else}
+      <div class="content">
+        <a
+          href="https://codepen.io/sballgirl11/pen/PvYqmL"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="content-overlay" />
+          <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Drum Kit</h3>
+            <p class="content-text">
+              A drum kit that can be played by pressing keys on the keyboard.
+            </p>
+            <p>From the JS30 course by Wes Bos.</p>
+            <p>Built with JavaScript</p>
+
+            <p>Click to view webpage.</p>
+          </div>
+        </a>
+      </div>
+    {/if}
+    {#if mobile}
+      <div class="mobile-content">
+        <div>
+          <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
+        </div>
+        <a
+          href="https://codepen.io/sballgirl11/pen/bPozoK"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="mobile-links">
+            <h3>Random Quote Generator</h3>
+            <p>A random quote generator with a color changing background.</p>
+            <p>Built with JavaScript.</p>
+            <button>Click to view webpage.</button>
+          </div>
+        </a>
+      </div>
+    {:else}
+      <div class="content">
+        <a
+          href="https://codepen.io/sballgirl11/pen/bPozoK"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="content-overlay" />
+          <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Random Quote Generator</h3>
+            <p class="content-text">
+              A random quote generator with a color changing background.
+            </p>
+            <p>Built with JavaScript.</p>
+            <p>Click to view webpage.</p>
+          </div>
+        </a>
+      </div>
+    {/if}
   </div>
 </div>
