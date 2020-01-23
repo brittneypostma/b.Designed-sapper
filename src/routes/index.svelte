@@ -201,7 +201,7 @@
   </div>
 
   <div class="ind">
-    <h2 class="bgText sub-text">owner at b.Designed.</h2>
+    <h2 class="bgText sub-text">owner of b.Designed.</h2>
   </div>
 
   <div class="ind">

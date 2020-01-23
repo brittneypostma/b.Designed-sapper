@@ -1,11 +1,14 @@
 <script>
   import { onMount } from "svelte";
-  // let mobile = false
+  let mobile = false;
 
-  // onMount (() => {
-  //   let viewportWidth = window.innerWidth
-
-  // })
+  onMount(() => {
+    let viewportWidth = window.innerWidth;
+    console.log(viewportWidth);
+    if (viewportWidth <= 800) {
+      mobile = !mobile;
+    }
+  });
 </script>
 
 <style>
@@ -143,27 +146,14 @@
 <div class="cont">
   <h1>Portfolio</h1>
   <div class="blocks">
-    <!-- {#if mobile}
-     <div class="content">
-     <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
-     </div><a
-        href="https://console-logs.netlify.com/"
-        target="_blank"
-        rel="noopener noreferrer">
-<div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Console Logs</h3>
-          <p class="content-text">A site for all of my programming notes.</p>
-          <p>Built with Svelte and Sapper.</p>
-          <p>Click to view webpage.</p>
-        </div></a>
-    {:else} -->
-    <div class="content">
+    {#if mobile}
+      <div class="content">
+        <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
+      </div>
       <a
         href="https://console-logs.netlify.com/"
         target="_blank"
         rel="noopener noreferrer">
-        <div class="content-overlay" />
-        <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Console Logs</h3>
           <p class="content-text">A site for all of my programming notes.</p>
@@ -171,8 +161,23 @@
           <p>Click to view webpage.</p>
         </div>
       </a>
-    </div>
-    <!-- {/if} -->
+    {:else}
+      <div class="content">
+        <a
+          href="https://console-logs.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div class="content-overlay" />
+          <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Console Logs</h3>
+            <p class="content-text">A site for all of my programming notes.</p>
+            <p>Built with Svelte and Sapper.</p>
+            <p>Click to view webpage.</p>
+          </div>
+        </a>
+      </div>
+    {/if}
 
     <div class="content">
       <a

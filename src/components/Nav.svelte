@@ -6,7 +6,7 @@
 
 <style>
   .nav {
-    width: 100%;
+    width: 100vw;
     height: 57px;
     position: fixed;
     z-index: 10;
