@@ -207,7 +207,7 @@
       class="form"
       name="contact"
       method="POST"
-      action="thankyou"
+      action="/thankyou"
       Content-Type="application/x-www-form-urlencoded"
       netlify
       netlify-honeypot="bot-field">
