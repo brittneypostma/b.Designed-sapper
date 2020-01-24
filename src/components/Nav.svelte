@@ -6,7 +6,7 @@
 
 <style>
   .nav {
-    width: 100vw;
+    width: 100%;
     height: 57px;
     position: fixed;
     z-index: 10;
@@ -226,7 +226,7 @@
       bind:checked={clicked}
       on:click={() => (clicked = !clicked)} />
     <div class="nav-title">
-      <img src="logo-192.png" alt="logo" class="logo" />
+      <img src="logo.png" alt="logo" class="logo" />
     </div>
     <div class="nav-btn">
       <label for="nav-check">

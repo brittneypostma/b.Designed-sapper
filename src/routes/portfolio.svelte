@@ -128,6 +128,10 @@
     top: 80%;
   }
 
+  .mobile-links {
+    display: none;
+  }
+
   @media only screen and (max-width: 800px) {
     .cont {
       width: 95%;
@@ -140,24 +144,33 @@
     .mobile-content {
       display: grid;
       justify-content: flex-end;
+      margin-bottom: 1em;
+      grid-gap: 1em;
       text-align: center;
       height: 100%;
       grid-template-rows: 200px 200px;
     }
 
     .mobile-content > a {
+      padding: 0;
       text-decoration: none;
       color: whitesmoke;
+    }
+
+    .image > img {
+      border: 1px solid white;
     }
 
     .mobile-links {
       width: 100%;
       height: 100%;
       display: grid;
-      align-items: stretch;
+      align-content: center;
+      cursor: pointer;
     }
 
     .mobile-links > button {
+      cursor: pointer;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       color: whitesmoke;
       background-image: linear-gradient(
@@ -172,6 +185,15 @@
       text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
         3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
         #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
+      border-radius: 0.2em;
+    }
+
+    .mobile-links > button:hover {
+      background-image: linear-gradient(
+        rgb(0, 255, 255),
+        rgb(0, 209, 209),
+        rgb(0, 255, 255)
+      );
     }
   }
 </style>
@@ -185,7 +207,7 @@
   <div class="blocks">
     {#if mobile}
       <div class="mobile-content">
-        <div>
+        <div class="image">
           <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
@@ -220,7 +242,7 @@
 
     {#if mobile}
       <div class="mobile-content">
-        <div>
+        <div class="image">
           <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
         </div>
         <a
@@ -255,7 +277,7 @@
 
     {#if mobile}
       <div class="mobile-content">
-        <div>
+        <div class="image">
           <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
         </div>
         <div class="mobile-links">
@@ -263,9 +285,8 @@
           <p>A check in system for volunteers at a school.</p>
           <p>Built with Svelte and Sapper.</p>
           <p>
-            Due to the private content of the site,
-            <br />
-            this webpage is unable to be viewed.
+            Due to the private content of the site, this webpage is unable to be
+            viewed.
           </p>
         </div>
       </div>
@@ -290,7 +311,7 @@
     {/if}
     {#if mobile}
       <div class="mobile-content">
-        <div>
+        <div class="image">
           <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
@@ -326,7 +347,7 @@
     {/if}
     {#if mobile}
       <div class="mobile-content">
-        <div>
+        <div class="image">
           <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
@@ -367,7 +388,7 @@
     {/if}
     {#if mobile}
       <div class="mobile-content">
-        <div>
+        <div class="image">
           <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
