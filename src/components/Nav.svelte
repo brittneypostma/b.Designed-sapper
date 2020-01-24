@@ -133,9 +133,7 @@
   @media (max-width: 850px) {
     .nav {
       background-color: #333;
-      background: linear-gradient(#000, #333) 0 50%;
-      background-size: 100% 200%;
-      background-position: 0 100%;
+      background: linear-gradient(#000, #333, #000) 0 50%;
     }
     .nav-menu {
       width: 50px;
@@ -162,8 +160,6 @@
       display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       background-color: #333;
       height: 0px;
@@ -171,15 +167,16 @@
       overflow: hidden;
       text-align: center;
       position: absolute;
-      top: 50px;
+      top: 57px;
       left: 0px;
       padding: 0;
+      margin: 0;
     }
 
     a {
+      background: linear-gradient(#000, #333, #000) 0 50%;
       display: block;
       width: 100%;
-      border-bottom: 1px solid black;
     }
     a:first-child {
       border-radius: 0;
