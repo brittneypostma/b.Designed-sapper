@@ -4,7 +4,6 @@
     // this file is called [slug].svelte
     const res = await this.fetch(`blog/${params.slug}.json`);
     const data = await res.json();
-
     if (res.status === 200) {
       return { post: data };
     } else {
@@ -138,5 +137,3 @@
   </div>
 
 </div>
-
-<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center"></div> -->
