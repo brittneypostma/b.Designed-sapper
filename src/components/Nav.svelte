@@ -136,8 +136,13 @@
       background: linear-gradient(#000, #333, #000) 0 50%;
     }
     .nav-menu {
-      width: 50px;
-      height: 25px;
+      width: 25%;
+      transition: all 0.3s linear;
+      cursor: pointer;
+    }
+
+    .nav-menu:hover {
+      transform: rotate(180deg);
     }
     .nav-btn {
       display: flex;
@@ -146,15 +151,12 @@
     }
     .nav-btn > label {
       display: flex;
-      width: 75%;
+      width: 100%;
       padding: 13px;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
     }
-    .nav-btn > label:hover,
-    .nav #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+
     .nav-links {
       display: grid;
       grid-template-columns: 1fr;
