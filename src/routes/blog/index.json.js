@@ -4,10 +4,10 @@ const contents = JSON.stringify(
   posts.map(post => {
     return {
       title: post.title,
-      slug: post.slug
-      // printDate: post.printDate,
-      // image: post.image,
-      // alt: post.alt,
+      slug: post.slug,
+      printDate: post.printDate,
+      image: post.image,
+      alt: post.alt
     };
   })
 );

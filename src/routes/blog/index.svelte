@@ -72,9 +72,9 @@
     <div class="card">
       <a rel="prefetch" href="blog/{post.slug}">
         <div>
-          <!-- <img src={post.image} alt={post.alt} /> -->
+          <img src={post.image} alt={post.alt} />
           <h3>{post.title}</h3>
-          <!-- <p>{post.printDate}</p> -->
+          <p>{post.printDate}</p>
         </div>
       </a>
     </div>
