@@ -50,11 +50,20 @@
     border: 1px ridge rgb(0, 255, 255);
   }
 
+  .content-details {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
+    letter-spacing: 2.5px;
+    color: whitesmoke;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2vh;
+  }
+
   .content-overlay {
     background-image: linear-gradient(
       to top,
-      rgb(0, 255, 255, 0.7),
-      rgb(0, 0, 0, 0.7) 90%
+      rgb(0, 255, 255, 0.9),
+      rgb(0, 0, 0, 0.9) 90%
     );
     position: absolute;
     height: 100%;

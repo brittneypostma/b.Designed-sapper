@@ -4,11 +4,11 @@
   import Spinner from "../components/Spinner.svelte";
   import Footer from "../components/Footer.svelte";
 
-  let loading = true;
+  // let loading = true;
 
-  onMount(() => {
-    loading = !loading;
-  });
+  // onMount(() => {
+  //   loading = !loading;
+  // });
 
   export let segment;
 </script>
@@ -60,12 +60,12 @@
 <div class="grid">
 
   <Nav {segment} />
-  {#if !loading}
-    <main>
-      <slot />
-    </main>
-  {:else}
+  <!-- {#if !loading} -->
+  <main>
+    <slot />
+  </main>
+  <!-- {:else}
     <Spinner />
-  {/if}
+  {/if} -->
   <Footer />
 </div>
