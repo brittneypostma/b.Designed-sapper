@@ -146,8 +146,7 @@
     }
     .nav-btn > label {
       display: flex;
-      width: 50px;
-      height: 50px;
+      width: 75%;
       padding: 13px;
       justify-content: center;
       align-items: center;
