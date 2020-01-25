@@ -4,7 +4,6 @@
 
   onMount(() => {
     let viewportWidth = window.innerWidth;
-    console.log(viewportWidth);
     if (viewportWidth <= 800) {
       mobile = !mobile;
     }
@@ -218,7 +217,7 @@
             <h3>Console Logs</h3>
             <p>A site for all of my programming notes.</p>
             <p>Built with Svelte and Sapper.</p>
-            <button>View Webpage.</button>
+            <button>View Webpage</button>
           </div>
         </a>
       </div>
@@ -253,7 +252,7 @@
             <h3>CRWN-Clothing</h3>
             <p>A mock e-commerce app.</p>
             <p>Built with React.</p>
-            <button>Click to view webpage.</button>
+            <button>View Webpage</button>
           </div>
         </a>
       </div>
@@ -322,7 +321,7 @@
             <h3>Piano Kit</h3>
             <p>A clickable and keyboard enabled piano kit.</p>
             <p>Built with JavaScript.</p>
-            <button>Click to view webpage.</button>
+            <button>View Webpage</button>
           </div>
         </a>
       </div>
@@ -361,7 +360,7 @@
             </p>
             <p>Built with JavaScript</p>
 
-            <button>Click to view webpage.</button>
+            <button>View Webpage</button>
           </div>
         </a>
       </div>
@@ -399,7 +398,7 @@
             <h3>Random Quote Generator</h3>
             <p>A random quote generator with a color changing background.</p>
             <p>Built with JavaScript.</p>
-            <button>Click to view webpage.</button>
+            <button>View Webpage</button>
           </div>
         </a>
       </div>
