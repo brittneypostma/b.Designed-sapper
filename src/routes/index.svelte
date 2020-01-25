@@ -161,15 +161,15 @@
     }
 
     .ind {
-      min-width: 250px;
+      min-width: 275px;
     }
 
     .ind:nth-child(2) {
-      margin-top: -13%;
+      margin-top: -10%;
     }
 
     .ind:nth-child(3) {
-      margin-top: -8%;
+      margin-top: -9%;
     }
 
     .ind:nth-child(4) {
