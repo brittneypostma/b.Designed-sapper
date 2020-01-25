@@ -101,7 +101,6 @@
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-decoration: none;
     text-align: center;
-    width: 100%;
     justify-self: center;
     font-size: 4vh;
     width: 100%;
@@ -162,19 +161,19 @@
     }
 
     .ind {
-      min-width: 350px;
+      min-width: 250px;
     }
 
     .ind:nth-child(2) {
-      margin-top: -16%;
+      margin-top: -13%;
     }
 
     .ind:nth-child(3) {
-      margin-top: -9%;
+      margin-top: -8%;
     }
 
     .ind:nth-child(4) {
-      font-size: 1.8vh;
+      font-size: 1.5vh;
       margin-bottom: 1%;
     }
 
