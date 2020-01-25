@@ -1,15 +1,11 @@
 <script>
-  import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
+  import { stores } from "@sapper/app";
   import Nav from "../components/Nav.svelte";
   import Spinner from "../components/Spinner.svelte";
   import Footer from "../components/Footer.svelte";
 
-  // let loading = true;
-
-  // onMount(() => {
-  //   loading = !loading;
-  // });
-
+  const { preloading } = stores();
   export let segment;
 </script>
 
@@ -60,12 +56,13 @@
 <div class="grid">
 
   <Nav {segment} />
-  <!-- {#if !loading} -->
-  <main>
-    <slot />
-  </main>
-  <!-- {:else}
+
+  {#if !$preloading}
+    <main transition:fade>
+      <slot />
+    </main>
+  {:else}
     <Spinner />
-  {/if} -->
+  {/if}
   <Footer />
 </div>
