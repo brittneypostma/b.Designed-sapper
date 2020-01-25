@@ -56,7 +56,6 @@
 <div class="grid">
 
   <Nav {segment} />
-
   {#if !$preloading}
     <main transition:fade>
       <slot />

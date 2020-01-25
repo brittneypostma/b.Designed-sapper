@@ -50,12 +50,19 @@
     border: 1px ridge rgb(0, 255, 255);
   }
 
-  .content-details {
+  .content-title {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 0 auto;
+    border-bottom: 1px solid whitesmoke;
+  }
+
+  .content-details {
     font-style: italic;
     letter-spacing: 2.5px;
     color: whitesmoke;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
+      3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
+      #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
     font-size: 2vh;
   }
 
@@ -99,9 +106,8 @@
   .content-details {
     position: absolute;
     text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
+    padding: 0;
+    width: 75%;
     top: 50%;
     left: 50%;
     opacity: 0;
