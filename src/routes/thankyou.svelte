@@ -76,7 +76,7 @@
     );
     color: #bbb;
     letter-spacing: 1px;
-    animation: slow-fade 3.5s ease-in;
+    animation: slow-fade 2s ease-in;
   }
 
   @keyframes slow-fade {
