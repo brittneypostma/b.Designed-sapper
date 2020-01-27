@@ -325,9 +325,8 @@
           </p>
           <p>Built with Svelte and Sapper.</p>
           <p>
-            Due to the private content of the site,
-            <br />
-            this webpage is unable to be viewed.
+            Due to the private content of the site, this webpage is unable to be
+            viewed.
           </p>
         </div>
       </div>
