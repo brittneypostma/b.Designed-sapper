@@ -262,6 +262,8 @@
     </form>
   </div>
   <div class="thanks">
-    <ThankYou />
+    <a href="/thankyou">
+      <ThankYou />
+    </a>
   </div>
 </div>
