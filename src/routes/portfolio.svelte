@@ -63,7 +63,7 @@
     text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
       3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
-    font-size: 2vh;
+    font-size: 18px;
   }
 
   .content-overlay {
@@ -146,6 +146,12 @@
     display: none;
   }
 
+  @media only screen and (min-width: 801px) and (max-width: 1169px) {
+    .content-details {
+      font-size: 3vh;
+    }
+  }
+
   @media only screen and (max-width: 800px) {
     .cont {
       width: 95%;
@@ -179,7 +185,7 @@
       width: 100%;
       height: 100%;
       display: grid;
-      align-content: center;
+      align-content: space-between;
       cursor: pointer;
     }
 
@@ -230,8 +236,10 @@
           rel="noopener noreferrer">
           <div class="mobile-links">
             <h3>Console Logs</h3>
-            <p>A site for all of my programming notes.</p>
-            <p>Built with Svelte and Sapper.</p>
+            <p>
+              A site for all of my programming notes. Built with Svelte and
+              Sapper.
+            </p>
             <button>View Webpage</button>
           </div>
         </a>
@@ -265,8 +273,7 @@
           rel="noopener noreferrer">
           <div class="mobile-links">
             <h3>CRWN-Clothing</h3>
-            <p>A mock e-commerce app.</p>
-            <p>Built with React.</p>
+            <p>A mock e-commerce app. Built with React.</p>
             <button>View Webpage</button>
           </div>
         </a>
@@ -296,8 +303,10 @@
         </div>
         <div class="mobile-links">
           <h3>Check In System</h3>
-          <p>A check in system for volunteers at a school.</p>
-          <p>Built with Svelte and Sapper.</p>
+          <p>
+            A check in system for volunteers at a school. Built with Svelte and
+            Sapper.
+          </p>
           <p>
             Due to the private content of the site, this webpage is unable to be
             viewed.
@@ -334,8 +343,9 @@
           rel="noopener noreferrer">
           <div class="mobile-links">
             <h3>Piano Kit</h3>
-            <p>A clickable and keyboard enabled piano kit.</p>
-            <p>Built with JavaScript.</p>
+            <p>
+              A clickable and keyboard enabled piano kit. Built with JavaScript.
+            </p>
             <button>View Webpage</button>
           </div>
         </a>
@@ -372,8 +382,8 @@
             <h3>Drum Kit</h3>
             <p>
               A drum kit that can be played by pressing keys on the keyboard.
+              Built with JavaScript
             </p>
-            <p>Built with JavaScript</p>
 
             <button>View Webpage</button>
           </div>
@@ -411,8 +421,10 @@
           rel="noopener noreferrer">
           <div class="mobile-links">
             <h3>Random Quote Generator</h3>
-            <p>A random quote generator with a color changing background.</p>
-            <p>Built with JavaScript.</p>
+            <p>
+              A random quote generator with a color changing background. Built
+              with JavaScript.
+            </p>
             <button>View Webpage</button>
           </div>
         </a>
