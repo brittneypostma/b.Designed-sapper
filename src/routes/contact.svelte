@@ -1,4 +1,11 @@
+<script>
+  import ThankYou from "./thankyou.svelte";
+</script>
+
 <style>
+  .thanks {
+    display: none;
+  }
   .container {
     display: flex;
     align-items: center;
@@ -253,5 +260,8 @@
         <input type="submit" name="submit" value="Send" />
       </label>
     </form>
+  </div>
+  <div class="thanks">
+    <ThankYou />
   </div>
 </div>
