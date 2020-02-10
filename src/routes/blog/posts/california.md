@@ -116,3 +116,9 @@ The show was getting close to over when again the guy that warms the audience up
 </p>
 
 That was the end of our trip to California, we spent the rest of the day walking around City Walk and headed to the airport for our red eye back to Michigan. As short as it was, this was seriously the trip of a lifetime. The kindness of a stranger on a plane, helped me to meet my idol! This goes to show always be nice and pass on whatever you can, you never know how its going to effect someone!
+
+<p align="center">
+<img src="blog-images/kcs/tv.jpg" alt="me on kcs" style="width: 45%; margin-right: 1em;"><img src="blog-images/kcs/hug.jpg" alt="me on kcs" style="width: 45%;">
+</p>
+
+Our episode aired in mid January. I only caught myself on TV once for the whole episode, but it was totally worth it and not everyone gets to stand that close to Kelly! I would definitely make the trip out again in a heartbeat!
