@@ -79,4 +79,13 @@
       </a>
     </div>
   {/each}
+  <div class="card">
+    <a rel="prefetch" href="https://console-logs.netlify.app/blog">
+      <div>
+        <img style="width: 150%; position: relative; right: 25%;" src='./portfolio/logs.jpg' alt="console-logs" />
+        <h3>Console Logs</h3>
+        <p>Multiple dev blog posts.</p>
+      </div>
+    </a>
+  </div>
 </div>
