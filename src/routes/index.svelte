@@ -135,6 +135,7 @@
 
     .ind {
       min-width: 400px;
+      width: 400px;
     }
   }
 
@@ -145,8 +146,8 @@
     }
 
     .ind {
-      min-width: 400px;
-      width: 400px;
+      min-width: 325px;
+      width: 325px;
     }
 
     .letter {
