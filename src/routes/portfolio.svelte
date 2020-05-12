@@ -18,7 +18,7 @@
 
   .blocks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 1em;
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@
     text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
       3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
-    font-size: 18px;
+    font-size: 2vh;
   }
 
   .content-overlay {
@@ -146,19 +146,13 @@
     display: none;
   }
 
-  @media only screen and (min-width: 801px) and (max-width: 1169px) {
-    .content-details {
-      font-size: 3vh;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 700px) {
     .cont {
       width: 95%;
     }
 
     .blocks {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: 1fr;
     }
 
     .mobile-content {

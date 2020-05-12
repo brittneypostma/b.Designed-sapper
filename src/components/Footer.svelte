@@ -17,6 +17,11 @@
 
   a {
     padding: 0 0.5em;
+    transition: scale 0.2s linear;
+  }
+
+  a:hover {
+    transform: scale(1.1);
   }
 
   p {

@@ -7,20 +7,23 @@
 <style>
   .nav {
     width: 100%;
-    height: 57px;
+    height: 70px;
     position: fixed;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#000, #333, #000) 0 50%;
+  }
+
+  .logo-link {
+    background-color: transparent;
+    width: 50px;
   }
 
   .logo {
-    width: 55px;
-    position: relative;
-    top: 1px;
+    width: 50px;
   }
+
   .nav-btn {
     display: none;
   }
@@ -28,25 +31,11 @@
     position: fixed;
     z-index: 10;
     width: 100%;
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px 150px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 2vh;
   }
-
-  a::before {
-    content: "";
-    position: absolute;
-    z-index: 11;
-    left: 12%;
-    bottom: 0;
-    top: 40px;
-    width: 75%;
-    height: 2px;
-    /* background: #aaa; */
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-
   a {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-style: italic;
@@ -55,9 +44,6 @@
     display: grid;
     position: relative;
     text-decoration: none;
-    /* background: linear-gradient(#000, #333) 0 50%;
-    background-size: 100% 200%;
-    background-position: 0 100%; */
     color: #eee;
     text-align: center;
     letter-spacing: 1px;
@@ -66,17 +52,8 @@
     border-right: 1px;
     border-left: 1px;
   }
-  /* 
-  a:first-child {
-    border-radius: 0.7em 0 0 0.7em;
-  }
-
-  a:last-child {
-    border-radius: 0 0.7em 0.7em 0;
-  } */
-
   a:hover {
-    background-image: linear-gradient(to top, transparent, #00ffff 95%);
+    transform: scale(1.2);
   }
 
   a::after {
@@ -87,41 +64,21 @@
     left: 2px;
     width: calc(100% - 4px);
     height: 56px;
-    /* background-image: radial-gradient(
-        ellipse at top left,
-        rgba(255, 255, 255, 0.2) 10%,
-        transparent,
-        transparent
-      ),
-      radial-gradient(
-        ellipse at bottom right,
-        rgba(250, 250, 250, 0.1) 10%,
-        transparent,
-        transparent
-      ); */
     border-radius: 0;
   }
-
-  /* a:first-child::after {
-    border-radius: 0.7em 0 0 0.7em;
-  }
-
-  a:last-child::after {
-    border-radius: 0 0.7em 0.7em 0;
-  } */
-
   .selected {
-    background-position: 0 100%;
-    background-image: linear-gradient(#ccc, whitesmoke, #ccc, transparent 90%);
+    position: relative;
+    top: -1px;
+    transform: scale(1.2);
+    border-bottom: 2px solid #333;
   }
 
-  .selected::before {
-    background: rgb(26, 26, 26);
-    transform: scaleX(1);
+  a,
+  .selected {
+    padding-bottom: 0;
   }
-
-  .selected:hover {
-    background-image: linear-gradient(#ccc, whitesmoke, #ccc, transparent 90%);
+  .selected {
+    color: rgb(0, 255, 255);
   }
 
   #nav-check {
@@ -129,11 +86,8 @@
   }
 
   @media (max-width: 850px) {
-    .nav {
-      background-color: #333;
-      background: linear-gradient(#000, #333, #000) 0 50%;
-    }
     .nav-menu {
+      margin-top: 10px;
       width: 25%;
       transition: all 0.3s linear;
       cursor: pointer;
@@ -150,32 +104,40 @@
     .nav-btn > label {
       display: flex;
       width: 100%;
-      padding: 13px;
+      padding: 10px;
       justify-content: flex-end;
       align-items: center;
     }
 
     .nav-links {
+      background-color: rgb(0, 0, 0, 0.9);
       display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
       width: 100%;
-      background-color: #333;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow: hidden;
       text-align: center;
       position: absolute;
-      top: 57px;
+      top: 70px;
       left: 0px;
       padding: 0;
       margin: 0;
     }
 
     a {
-      background: linear-gradient(#000, #333, #000) 0 50%;
       display: block;
       width: 100%;
+    }
+
+    a:hover {
+      transform: scale(1);
+    }
+
+    a:hover,
+    .selected {
+      transform: scale(1);
     }
     a:first-child {
       border-radius: 0;
@@ -190,6 +152,10 @@
 
     a:last-child::after {
       border-radius: 0 0.7em 0.7em 0;
+    }
+
+    .selected {
+      border-bottom: 0;
     }
 
     #nav-check:not(:checked) ~ .nav-links {
@@ -221,9 +187,10 @@
       id="nav-check"
       bind:checked={clicked}
       on:click={() => (clicked = !clicked)} />
-    <div class="nav-title">
-      <img src="logo.png" alt="logo" class="logo" />
-    </div>
+    <a href="." class="logo-link">
+      <img src="android-chrome-192x192.png" alt="logo" class="logo" />
+    </a>
+
     <div class="nav-btn">
       <label for="nav-check">
         <img src="nav-menu.png" alt="nav menu button" class="nav-menu" />

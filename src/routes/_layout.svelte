@@ -12,7 +12,7 @@
 <style>
   .grid {
     display: grid;
-    grid-template-rows: 60px 1fr 0;
+    grid-template-rows: 70px 1fr 0;
     position: absolute;
     top: 0;
     background: transparent url(/twinkling.png) repeat;

@@ -36,21 +36,19 @@
 
   .ind {
     display: flex;
-    width: 100%;
+    width: 500px;
     min-width: 450px;
+    line-height: 1;
   }
 
-  .ind:nth-child(2) {
-    margin-top: -29%;
+  h1 {
+    margin: 0;
   }
 
-  .ind:nth-child(3) {
-    margin-top: -13%;
+  h1:last-of-type {
+    margin-bottom: 10px;
   }
 
-  .ind:last-child {
-    margin-top: -5%;
-  }
   .bgText {
     text-align: center;
     letter-spacing: 7px;
@@ -91,6 +89,7 @@
   }
 
   .btnText {
+    line-height: initial;
     color: rgb(226, 226, 226);
     text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.5),
       3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
@@ -106,14 +105,11 @@
     width: 100%;
     height: 6vh;
     border-radius: 0.2em;
-
-    background-image: linear-gradient(
-      rgb(0, 255, 255, 0.6),
-      rgb(0, 255, 255, 0.9),
-      rgb(0, 255, 255, 0.6)
-    );
+    background-color: rgb(0, 255, 255, 0.7);
     color: #bbb;
     letter-spacing: 1px;
+    transition: background 0.2s linear;
+    border: 1px solid transparent;
   }
 
   @supports (-ms-ime-align: auto) {
@@ -128,25 +124,13 @@
 
   a:hover {
     background-color: transparent;
-    background-image: linear-gradient(to top, #00ffff, transparent 10%);
+    border: 1px solid rgb(0, 255, 255, 0.2);
   }
 
   @media only screen and (min-width: 800px) and (max-width: 1000px) {
     .cont {
       font-size: 1.8vh;
       width: 75%;
-    }
-
-    .ind:nth-child(2) {
-      margin-top: -30%;
-    }
-
-    .ind:nth-child(3) {
-      margin-top: -14%;
-    }
-
-    .ind:nth-child(4) {
-      font-size: 2vh;
     }
 
     .ind {
@@ -161,20 +145,8 @@
     }
 
     .ind {
-      min-width: 275px;
-    }
-
-    .ind:nth-child(2) {
-      margin-top: -10%;
-    }
-
-    .ind:nth-child(3) {
-      margin-top: -9%;
-    }
-
-    .ind:nth-child(4) {
-      font-size: 1.5vh;
-      margin-bottom: 1%;
+      min-width: 400px;
+      width: 400px;
     }
 
     .letter {
@@ -188,11 +160,10 @@
 </svelte:head>
 
 <div class="cont">
-  <div class="ind">
-    <h1 class="bgText">Hi,</h1>
-  </div>
+
   <div class="ind">
     <h1>
+      <span class="bgText">Hi,</span>
       <span class="bgText">I'm</span>
       <span class="letter">B</span>
       <span class="name">rittney,</span>

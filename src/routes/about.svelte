@@ -98,7 +98,7 @@
     visibility: visible;
     backface-visibility: hidden;
     color: black;
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-style: italic;
     transform: rotateY(180deg);
