@@ -15,15 +15,13 @@
     align-items: center;
   }
 
-  .logo-link {
-    background-color: transparent;
-    width: 50px;
-  }
-
   .logo {
-    width: 50px;
+    display: grid;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
   }
-
   .nav-btn {
     display: none;
   }
@@ -187,10 +185,9 @@
       id="nav-check"
       bind:checked={clicked}
       on:click={() => (clicked = !clicked)} />
-    <a href="." class="logo-link">
-      <img src="android-chrome-192x192.png" alt="logo" class="logo" />
-    </a>
-
+    <div class="logo">
+      <img src="android-chrome-192x192.png" alt="logo" width="60px" />
+    </div>
     <div class="nav-btn">
       <label for="nav-check">
         <img src="nav-menu.png" alt="nav menu button" class="nav-menu" />
