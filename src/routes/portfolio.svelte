@@ -187,11 +187,7 @@
       cursor: pointer;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       color: whitesmoke;
-      background-image: linear-gradient(
-        rgb(3, 87, 87),
-        rgb(0, 255, 255),
-        rgb(3, 87, 87)
-      );
+      background-color: rgb(0, 255, 255, 0.7);
       outline: none;
       border: none;
       width: 100%;
@@ -200,14 +196,12 @@
         3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
         #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
       border-radius: 0.2em;
+      border: 1px solid transparent;
     }
 
     .mobile-links > button:hover {
-      background-image: linear-gradient(
-        rgb(0, 255, 255),
-        rgb(0, 209, 209),
-        rgb(0, 255, 255)
-      );
+      background-color: transparent;
+      border: 1px solid rgb(0, 255, 255, 0.2);
     }
   }
 </style>

@@ -1,27 +1,31 @@
 <style>
-  div {
-    background-color: transparent;
+  footer {
     width: 100%;
-    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
     height: 50px;
     color: #eee;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
     line-height: 1;
   }
 
+  .links {
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   a {
     padding: 0 0.5em;
-    transition: scale 0.2s linear;
+    transition: transform 0.2s linear;
   }
 
   a:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   p {
@@ -55,30 +59,32 @@
   }
 </style>
 
-<div>
-  <a
-    href="https://www.facebook.com/b.Designed11/"
-    rel="noopener noreferrer"
-    target="_blank">
-    <img src="/icons/facebook.png" alt="facebook" />
-  </a>
-  <a
-    href="https://twitter.com/BrittneyPostma"
-    rel="noopener noreferrer"
-    target="_blank">
-    <img src="/icons/twitter.png" alt="twitter" />
-  </a>
-  <p>b.Designed</p>
-  <a
-    href="https://www.linkedin.com/in/brittney-postma-868928178/"
-    rel="noopener noreferrer"
-    target="_blank">
-    <img src="/icons/linkedin.png" alt="linkedin" />
-  </a>
-  <a
-    href="https://github.com/sballgirl11"
-    rel="noopener noreferrer"
-    target="_blank">
-    <img src="/icons/github.png" alt="github" />
-  </a>
-</div>
+<footer>
+  <div class="links">
+    <a
+      href="https://www.facebook.com/b.Designed11/"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/facebook.png" alt="facebook" />
+    </a>
+    <a
+      href="https://twitter.com/BrittneyPostma"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/twitter.png" alt="twitter" />
+    </a>
+    <p>b.Designed</p>
+    <a
+      href="https://www.linkedin.com/in/brittney-postma-868928178/"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/linkedin.png" alt="linkedin" />
+    </a>
+    <a
+      href="https://github.com/sballgirl11"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/github.png" alt="github" />
+    </a>
+  </div>
+</footer>

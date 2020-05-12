@@ -97,6 +97,8 @@
   }
 
   a {
+    display: grid;
+    align-items: center;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-decoration: none;
     text-align: center;
@@ -129,7 +131,7 @@
 
   @media only screen and (min-width: 800px) and (max-width: 1000px) {
     .cont {
-      font-size: 1.8vh;
+      font-size: 1.4vh;
       width: 75%;
     }
 
@@ -141,7 +143,7 @@
 
   @media only screen and (max-width: 799px) {
     .cont {
-      font-size: 1.4vh;
+      font-size: 1.2vh;
       width: 100%;
     }
 
@@ -182,7 +184,7 @@
     </h1>
   </div>
 
-  <div class="ind">
+  <div class="ind btn">
     <a href="portfolio">
       <span class="btnText">View My Work</span>
     </a>

@@ -6,6 +6,7 @@
 
 <style>
   .nav {
+    background-color: rgb(0, 0, 0, 0.9);
     width: 100%;
     height: 70px;
     position: fixed;
