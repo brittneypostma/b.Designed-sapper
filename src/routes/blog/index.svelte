@@ -15,7 +15,7 @@
 <style>
   .grid-logs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     grid-gap: 1em;
     justify-items: center;
     margin: 0 auto;
@@ -37,7 +37,7 @@
   }
 
   img {
-    width: 100%;
+    width: 225px;
     position: relative;
     height: 200px;
     transform: scale(1.1);
