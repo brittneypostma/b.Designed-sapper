@@ -6,7 +6,7 @@
     "Designer",
     "Marketer",
     "Freelancer",
-    "Mom"
+    "Mom",
   ];
 
   let curIdx = 0;
@@ -20,6 +20,39 @@
     }, 1000);
   });
 </script>
+
+<svelte:head>
+  <title>b.Designed</title>
+</svelte:head>
+
+<div class="cont">
+
+  <div class="ind">
+    <h1>
+      <span class="bgText">Hi,</span>
+      <span class="bgText">I'm</span>
+      <span class="letter">B</span>
+      <span class="name">rittney,</span>
+    </h1>
+  </div>
+
+  <div class="ind">
+    <h2 class="bgText sub-text">owner of b.Designed.</h2>
+  </div>
+
+  <div class="ind">
+    <h1 class="bgText">I'm a</h1>
+    <h1>
+      <span class="hlText">{changingTextArray[curIdx]}</span>
+    </h1>
+  </div>
+
+  <div class="ind btn">
+    <a href="portfolio">
+      <span class="btnText">View My Work</span>
+    </a>
+  </div>
+</div>
 
 <style>
   .cont {
@@ -157,36 +190,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>b.Designed</title>
-</svelte:head>
-
-<div class="cont">
-
-  <div class="ind">
-    <h1>
-      <span class="bgText">Hi,</span>
-      <span class="bgText">I'm</span>
-      <span class="letter">B</span>
-      <span class="name">rittney,</span>
-    </h1>
-  </div>
-
-  <div class="ind">
-    <h2 class="bgText sub-text">owner of b.Designed.</h2>
-  </div>
-
-  <div class="ind">
-    <h1 class="bgText">I'm a</h1>
-    <h1>
-      <span class="hlText">{changingTextArray[curIdx]}</span>
-    </h1>
-  </div>
-
-  <div class="ind btn">
-    <a href="portfolio">
-      <span class="btnText">View My Work</span>
-    </a>
-  </div>
-</div>
