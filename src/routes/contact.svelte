@@ -2,6 +2,81 @@
   import ThankYou from "./thankyou.svelte";
 </script>
 
+<svelte:head>
+  <title>Contact</title>
+</svelte:head>
+
+<h1>Contact Me</h1>
+<div class="container">
+  <div id="envelope" class="envelope">
+    <svg
+      id="flap"
+      class="flap"
+      height="45%"
+      width="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none">
+      <polygon points="0,0 100,0 50,100" />
+    </svg>
+
+    <form
+      class="form"
+      name="contact"
+      method="POST"
+      action="/thankyou"
+      Content-Type="application/x-www-form-urlencoded"
+      netlify
+      netlify-honeypot="bot-field">
+      <label for="form-name" id="form-name">
+        <input type="hidden" name="form-name" value="contact" />
+      </label>
+      <label for="first-name" id="first-name">
+        First Name
+        <input
+          class="text"
+          type="text"
+          name="first-name"
+          placeholder="First Name"
+          required />
+      </label>
+      <label for="last-name" id="last-name">
+        Last Name
+        <input
+          class="text"
+          type="text"
+          name="last-name"
+          placeholder="Last Name"
+          required />
+      </label>
+      <label for="email" id="email">
+        Email
+        <input
+          class="text"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required />
+      </label>
+      <label for="subject" id="subject">
+        Subject
+        <input class="text" type="text" name="subject" placeholder="Subject" />
+      </label>
+      <label for="message" id="message">
+        Message
+        <textarea name="message" placeholder="Message" required />
+      </label>
+      <label for="submit" id="submit">
+        <input type="submit" name="submit" value="Send" />
+      </label>
+    </form>
+  </div>
+  <div class="thanks">
+    <a href="/thankyou">
+      <ThankYou />
+    </a>
+  </div>
+</div>
+
 <style>
   .thanks {
     display: none;
@@ -192,78 +267,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Contact</title>
-</svelte:head>
-
-<h1>Contact Me</h1>
-<div class="container">
-  <div id="envelope" class="envelope">
-    <svg
-      id="flap"
-      class="flap"
-      height="45%"
-      width="100%"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none">
-      <polygon points="0,0 100,0 50,100" />
-    </svg>
-
-    <form
-      class="form"
-      name="contact"
-      method="POST"
-      action="/thankyou"
-      Content-Type="application/x-www-form-urlencoded"
-      netlify
-      netlify-honeypot="bot-field">
-      <label for="form-name" id="form-name">
-        <input type="hidden" name="form-name" value="contact" />
-      </label>
-      <label for="first-name" id="first-name">
-        First Name
-        <input
-          class="text"
-          type="text"
-          name="first-name"
-          placeholder="First Name"
-          required />
-      </label>
-      <label for="last-name" id="last-name">
-        Last Name
-        <input
-          class="text"
-          type="text"
-          name="last-name"
-          placeholder="Last Name"
-          required />
-      </label>
-      <label for="email" id="email">
-        Email
-        <input
-          class="text"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required />
-      </label>
-      <label for="subject" id="subject">
-        Subject
-        <input class="text" type="text" name="subject" placeholder="Subject" />
-      </label>
-      <label for="message" id="message">
-        Message
-        <textarea name="message" placeholder="Message" required />
-      </label>
-      <label for="submit" id="submit">
-        <input type="submit" name="submit" value="Send" />
-      </label>
-    </form>
-  </div>
-  <div class="thanks">
-    <a href="/thankyou">
-      <ThankYou />
-    </a>
-  </div>
-</div>

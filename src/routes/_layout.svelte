@@ -9,6 +9,19 @@
   export let segment;
 </script>
 
+<div class="grid">
+
+  <Nav {segment} />
+  {#if !$preloading}
+    <main transition:fade>
+      <slot />
+    </main>
+  {:else}
+    <Spinner />
+  {/if}
+  <Footer />
+</div>
+
 <style>
   .grid {
     display: grid;
@@ -52,16 +65,3 @@
     }
   }
 </style>
-
-<div class="grid">
-
-  <Nav {segment} />
-  {#if !$preloading}
-    <main transition:fade>
-      <slot />
-    </main>
-  {:else}
-    <Spinner />
-  {/if}
-  <Footer />
-</div>

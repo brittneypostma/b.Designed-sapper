@@ -1,3 +1,33 @@
+<footer>
+  <div class="links">
+    <a
+      href="https://www.facebook.com/b.Designed11/"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/facebook.png" alt="facebook" />
+    </a>
+    <a
+      href="https://twitter.com/BrittneyPostma"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/twitter.png" alt="twitter" />
+    </a>
+    <p>b.Designed</p>
+    <a
+      href="https://www.linkedin.com/in/brittney-postma-868928178/"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/linkedin.png" alt="linkedin" />
+    </a>
+    <a
+      href="https://github.com/sballgirl11"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img src="/icons/github.png" alt="github" />
+    </a>
+  </div>
+</footer>
+
 <style>
   footer {
     width: 100%;
@@ -58,33 +88,3 @@
     transform: scaleX(0.1);
   }
 </style>
-
-<footer>
-  <div class="links">
-    <a
-      href="https://www.facebook.com/b.Designed11/"
-      rel="noopener noreferrer"
-      target="_blank">
-      <img src="/icons/facebook.png" alt="facebook" />
-    </a>
-    <a
-      href="https://twitter.com/BrittneyPostma"
-      rel="noopener noreferrer"
-      target="_blank">
-      <img src="/icons/twitter.png" alt="twitter" />
-    </a>
-    <p>b.Designed</p>
-    <a
-      href="https://www.linkedin.com/in/brittney-postma-868928178/"
-      rel="noopener noreferrer"
-      target="_blank">
-      <img src="/icons/linkedin.png" alt="linkedin" />
-    </a>
-    <a
-      href="https://github.com/sballgirl11"
-      rel="noopener noreferrer"
-      target="_blank">
-      <img src="/icons/github.png" alt="github" />
-    </a>
-  </div>
-</footer>

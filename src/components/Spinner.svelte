@@ -1,3 +1,15 @@
+<div class="spinner">
+  <div class="ring" />
+  <div class="ring-center" />
+  <div class="planet">
+    <div class="wrap">
+      <div class="background" />
+      <div class="clouds" />
+    </div>
+    <div class="mask" />
+  </div>
+</div>
+
 <style>
   .spinner {
     width: 100%;
@@ -108,15 +120,3 @@
 
   /* Spinner inspiration from https://codepen.io/artyom-ivanov/pen/QjOYbO*/
 </style>
-
-<div class="spinner">
-  <div class="ring" />
-  <div class="ring-center" />
-  <div class="planet">
-    <div class="wrap">
-      <div class="background" />
-      <div class="clouds" />
-    </div>
-    <div class="mask" />
-  </div>
-</div>

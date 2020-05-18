@@ -1,3 +1,25 @@
+<div class="container">
+  <div id="envelope" class="envelope">
+    <svg
+      id="flap"
+      class="flap"
+      height="45%"
+      width="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none">
+      <polygon points="0,0 100,0 50,100" />
+    </svg>
+    <div class="thank">
+      Thank you!
+      <br />
+      I will get back to you soon!
+      <a href=".">
+        <span class="btnText">Go Home</span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <style>
   .container {
     display: flex;
@@ -108,25 +130,3 @@
   @media only screen and (min-width: 1001px) and (max-width: 1400px) {
   }
 </style>
-
-<div class="container">
-  <div id="envelope" class="envelope">
-    <svg
-      id="flap"
-      class="flap"
-      height="45%"
-      width="100%"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none">
-      <polygon points="0,0 100,0 50,100" />
-    </svg>
-    <div class="thank">
-      Thank you!
-      <br />
-      I will get back to you soon!
-      <a href=".">
-        <span class="btnText">Go Home</span>
-      </a>
-    </div>
-  </div>
-</div>

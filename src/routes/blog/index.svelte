@@ -1,8 +1,8 @@
 <script context="module">
   export function preload({ params, query }) {
     return this.fetch(`blog.json`)
-      .then(r => r.json())
-      .then(posts => {
+      .then((r) => r.json())
+      .then((posts) => {
         return { posts };
       });
   }
@@ -11,6 +11,38 @@
 <script>
   export let posts;
 </script>
+
+<svelte:head>
+  <title>Blog</title>
+</svelte:head>
+
+<h1>Blog Posts</h1>
+
+<div class="grid-logs">
+  {#each posts as post}
+    <div class="card">
+      <a rel="prefetch" href="blog/{post.slug}">
+        <div>
+          <img src={post.image} alt={post.alt} />
+          <h3>{post.title}</h3>
+          <p>{post.printDate}</p>
+        </div>
+      </a>
+    </div>
+  {/each}
+  <div class="card">
+    <a rel="prefetch" href="https://console-logs.netlify.app/blog">
+      <div>
+        <img
+          style="width: 150%; position: relative; right: 25%;"
+          src="./portfolio/logs.jpg"
+          alt="console-logs" />
+        <h3>Console Logs</h3>
+        <p>Multiple dev blog posts.</p>
+      </div>
+    </a>
+  </div>
+</div>
 
 <style>
   .grid-logs {
@@ -61,35 +93,3 @@
     transform: scale(0.95);
   }
 </style>
-
-<svelte:head>
-  <title>Blog</title>
-</svelte:head>
-
-<h1>Blog Posts</h1>
-
-<div class="grid-logs">
-  {#each posts as post}
-    <div class="card">
-      <a rel="prefetch" href="blog/{post.slug}">
-        <div>
-          <img src={post.image} alt={post.alt} />
-          <h3>{post.title}</h3>
-          <p>{post.printDate}</p>
-        </div>
-      </a>
-    </div>
-  {/each}
-  <div class="card">
-    <a rel="prefetch" href="https://console-logs.netlify.app/blog">
-      <div>
-        <img
-          style="width: 150%; position: relative; right: 25%;"
-          src="./portfolio/logs.jpg"
-          alt="console-logs" />
-        <h3>Console Logs</h3>
-        <p>Multiple dev blog posts.</p>
-      </div>
-    </a>
-  </div>
-</div>

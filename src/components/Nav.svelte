@@ -4,6 +4,60 @@
   let clicked = false;
 </script>
 
+<nav>
+  <div class="nav">
+    <input
+      type="checkbox"
+      id="nav-check"
+      bind:checked={clicked}
+      on:click={() => (clicked = !clicked)} />
+    <div class="logo">
+      <img src="android-chrome-192x192.png" alt="logo" width="60px" />
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <img src="nav-menu.png" alt="nav menu button" class="nav-menu" />
+      </label>
+    </div>
+    <div class="nav-links">
+      <a
+        class:selected={segment === undefined}
+        href="."
+        on:click={() => (clicked = !clicked)}>
+        home
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'about'}
+        href="about"
+        on:click={() => (clicked = !clicked)}>
+        about
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'portfolio'}
+        href="portfolio"
+        on:click={() => (clicked = !clicked)}>
+        portfolio
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'blog'}
+        href="blog"
+        on:click={() => (clicked = !clicked)}>
+        blog
+      </a>
+      <a
+        rel="prefetch"
+        class:selected={segment === 'contact'}
+        href="contact"
+        on:click={() => (clicked = !clicked)}>
+        contact
+      </a>
+    </div>
+  </div>
+</nav>
+
 <style>
   .nav {
     background-color: rgb(0, 0, 0, 0.9);
@@ -178,57 +232,3 @@
     }
   }
 </style>
-
-<nav>
-  <div class="nav">
-    <input
-      type="checkbox"
-      id="nav-check"
-      bind:checked={clicked}
-      on:click={() => (clicked = !clicked)} />
-    <div class="logo">
-      <img src="android-chrome-192x192.png" alt="logo" width="60px" />
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <img src="nav-menu.png" alt="nav menu button" class="nav-menu" />
-      </label>
-    </div>
-    <div class="nav-links">
-      <a
-        class:selected={segment === undefined}
-        href="."
-        on:click={() => (clicked = !clicked)}>
-        home
-      </a>
-      <a
-        rel="prefetch"
-        class:selected={segment === 'about'}
-        href="about"
-        on:click={() => (clicked = !clicked)}>
-        about
-      </a>
-      <a
-        rel="prefetch"
-        class:selected={segment === 'portfolio'}
-        href="portfolio"
-        on:click={() => (clicked = !clicked)}>
-        portfolio
-      </a>
-      <a
-        rel="prefetch"
-        class:selected={segment === 'blog'}
-        href="blog"
-        on:click={() => (clicked = !clicked)}>
-        blog
-      </a>
-      <a
-        rel="prefetch"
-        class:selected={segment === 'contact'}
-        href="contact"
-        on:click={() => (clicked = !clicked)}>
-        contact
-      </a>
-    </div>
-  </div>
-</nav>

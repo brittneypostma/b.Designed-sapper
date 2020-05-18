@@ -1,3 +1,108 @@
+<svelte:head>
+  <title>About</title>
+</svelte:head>
+
+<h1>About b.Designed</h1>
+
+<div class="top">
+  <img src="family.jpg" alt="my family" class="family" />
+  <p>
+    I am a mom of 3 wonderful children and we live in the beautiful city of
+    Holland, Michigan. I love developing web sites that are beautiful, that are
+    also fluid, responsive, and easy to use. I thrive on mobile-first
+    development with an extensive knowledge of CSS and React with Gatsby, Svelte
+    with Sapper, SEO, UX/UI design, and logo design. I love learning about all
+    the cool new stuff that comes out in the tech world daily. I also 💖 coffee
+    and beer 🍻, well because mom life!
+  </p>
+</div>
+
+<hr />
+<div class="skills-cont">
+
+  <h1>Skills</h1>
+
+  <div class="bottom">
+
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img src="/icons/webdev.png" alt="web dev" class="icons-top" />
+        </div>
+        <div class="side back">
+          Web
+          <br />
+          Development
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img src="/icons/marketing.png" alt="marketer" class="icons-top" />
+        </div>
+        <div class="side back">Marketing</div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img
+            src="/icons/graphic.png"
+            alt="graphic designer"
+            class="icons-top" />
+        </div>
+        <div class="side back">
+          Graphic
+          <br />
+          Design
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img src="/icons/fast.png" alt="fast" class="icons-bottom" />
+        </div>
+        <div class="side back">Fast</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img
+            src="/icons/responsive.png"
+            alt="responsive"
+            class="icons-bottom" />
+        </div>
+        <div class="side back">Responsive</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img
+            src="/icons/intuitive.png"
+            alt="intuitive"
+            class="icons-bottom" />
+        </div>
+        <div class="side back">Intuitive</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="side">
+          <img src="/icons/dynamic.png" alt="dynamic" class="icons-bottom" />
+        </div>
+        <div class="side back">Dynamic</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <style>
   h1 {
     letter-spacing: 0.2em;
@@ -162,108 +267,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>About</title>
-</svelte:head>
-
-<h1>About b.Designed</h1>
-
-<div class="top">
-  <img src="family.jpg" alt="my family" class="family" />
-  <p>
-    I am a mom of 3 wonderful children and we live in the beautiful city of
-    Holland, Michigan. I love developing web sites that are beautiful, that are
-    also fluid, responsive, and easy to use. I thrive on mobile-first
-    development with an extensive knowledge of CSS and React with Gatsby, Svelte
-    with Sapper, SEO, UX/UI design, and logo design. I love learning about all
-    the cool new stuff that comes out in the tech world daily. I also 💖 coffee
-    and beer 🍻, well because mom life!
-  </p>
-</div>
-
-<hr />
-<div class="skills-cont">
-
-  <h1>Skills</h1>
-
-  <div class="bottom">
-
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img src="/icons/webdev.png" alt="web dev" class="icons-top" />
-        </div>
-        <div class="side back">
-          Web
-          <br />
-          Development
-        </div>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img src="/icons/marketing.png" alt="marketer" class="icons-top" />
-        </div>
-        <div class="side back">Marketing</div>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img
-            src="/icons/graphic.png"
-            alt="graphic designer"
-            class="icons-top" />
-        </div>
-        <div class="side back">
-          Graphic
-          <br />
-          Design
-        </div>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img src="/icons/fast.png" alt="fast" class="icons-bottom" />
-        </div>
-        <div class="side back">Fast</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img
-            src="/icons/responsive.png"
-            alt="responsive"
-            class="icons-bottom" />
-        </div>
-        <div class="side back">Responsive</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img
-            src="/icons/intuitive.png"
-            alt="intuitive"
-            class="icons-bottom" />
-        </div>
-        <div class="side back">Intuitive</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img src="/icons/dynamic.png" alt="dynamic" class="icons-bottom" />
-        </div>
-        <div class="side back">Dynamic</div>
-      </div>
-    </div>
-  </div>
-</div>
