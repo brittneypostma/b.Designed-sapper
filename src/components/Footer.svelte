@@ -20,7 +20,7 @@
       <img src="/icons/linkedin.png" alt="linkedin" />
     </a>
     <a
-      href="https://github.com/sballgirl11"
+      href="https://github.com/brittneypostma"
       rel="noopener noreferrer"
       target="_blank">
       <img src="/icons/github.png" alt="github" />
