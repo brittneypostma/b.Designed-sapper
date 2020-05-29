@@ -129,7 +129,7 @@
           <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
-          href="https://sballgirl11.github.io/"
+          href="https://brittneypostma.github.io/piano/"
           target="_blank"
           rel="noopener noreferrer">
           <div class="mobile-links">
@@ -144,7 +144,7 @@
     {:else}
       <div class="content">
         <a
-          href="https://sballgirl11.github.io/"
+          href="https://brittneypostma.github.io/piano/"
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
