@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { fadeIn } from "../animate";
   let mobile = false;
 
   onMount(() => {
@@ -14,7 +15,7 @@
   <title>Portfolio</title>
 </svelte:head>
 
-<div class="cont">
+<div in:fadeIn class="cont">
   <h1>Portfolio</h1>
   <div class="blocks">
     {#if mobile}
@@ -166,15 +167,12 @@
           <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
-          href="https://codepen.io/sballgirl11/pen/PvYqmL"
+          href="https://red-cross-landing-page.netlify.app/"
           target="_blank"
           rel="noopener noreferrer">
           <div class="mobile-links">
-            <h3>Drum Kit</h3>
-            <p>
-              A drum kit that can be played by pressing keys on the keyboard.
-              Built with JavaScript
-            </p>
+            <h3>Red Cross Landing Page</h3>
+            <p>A landing page for the American Red Cross built with Svelte.</p>
 
             <button>View Webpage</button>
           </div>
@@ -183,18 +181,21 @@
     {:else}
       <div class="content">
         <a
-          href="https://codepen.io/sballgirl11/pen/PvYqmL"
+          href="https://red-cross-landing-page.netlify.app/"
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
-          <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
+          <img
+            src="portfolio/red-cross.png"
+            alt="red-cross"
+            width="100%"
+            height="345px" />
           <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">Drum Kit</h3>
+            <h3 class="content-title">Red Cross Landing Page</h3>
             <p class="content-text">
-              A drum kit that can be played by pressing keys on the keyboard.
+              A landing page for the American Red Cross.
             </p>
-            <p>From the JS30 course by Wes Bos.</p>
-            <p>Built with JavaScript</p>
+            <p>Built with Svelte</p>
 
             <p>Click to view webpage.</p>
           </div>
@@ -204,7 +205,11 @@
     {#if mobile}
       <div class="mobile-content">
         <div class="image">
-          <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
+          <img
+            src="portfolio/quote.jpg"
+            alt="red-cross"
+            width="100%"
+            height="345px" />
         </div>
         <a
           href="https://codepen.io/sballgirl11/pen/bPozoK"

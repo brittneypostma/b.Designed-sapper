@@ -1,12 +1,13 @@
 <script>
   import { onMount } from "svelte";
+  import { fadeIn } from "../animate";
 
   const changingTextArray = [
     "Developer",
     "Designer",
     "Marketer",
     "Freelancer",
-    "Mom",
+    "Mom"
   ];
 
   let curIdx = 0;
@@ -25,7 +26,7 @@
   <title>b.Designed</title>
 </svelte:head>
 
-<div class="cont">
+<div in:fadeIn class="cont">
 
   <div class="ind">
     <h1>
@@ -71,7 +72,7 @@
     display: flex;
     width: 500px;
     min-width: 450px;
-    line-height: 1;
+    line-height: 0.8;
   }
 
   h1 {
@@ -143,18 +144,8 @@
     background-color: rgb(0, 255, 255, 0.7);
     color: #bbb;
     letter-spacing: 1px;
-    transition: background 0.2s linear;
+    transition: all 0.2s ease-in;
     border: 1px solid transparent;
-  }
-
-  @supports (-ms-ime-align: auto) {
-    a {
-      background-image: linear-gradient(
-        rgb(2, 109, 109),
-        rgb(0, 255, 255),
-        rgb(2, 109, 109)
-      );
-    }
   }
 
   a:hover {
@@ -181,8 +172,8 @@
     }
 
     .ind {
-      min-width: 325px;
-      width: 325px;
+      min-width: 330px;
+      width: 330px;
     }
 
     .letter {

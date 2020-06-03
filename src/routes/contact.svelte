@@ -218,21 +218,17 @@
       3px 3px 3px rgba(0, 0, 0, 0.8), 0px 0px 1px #111,
       #333 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px;
     width: 100%;
-    background-image: linear-gradient(
-      rgb(2, 109, 109),
-      rgb(1, 233, 233),
-      rgb(2, 109, 109)
-    );
+    background-color: rgb(1, 233, 233);
     border-radius: 5px;
-    border: 0;
+    border: 1px solid transparent;
     cursor: pointer;
     padding: 10px 0;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   input[type="submit"]:hover {
-    background-color: #025f5f;
-    background-image: linear-gradient(to top, #00ffff, #000 7%);
+    background-color: #131313;
+    border: 1px solid rgb(1, 233, 233);
   }
 
   @keyframes open-flap {

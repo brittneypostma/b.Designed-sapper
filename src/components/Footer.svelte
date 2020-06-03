@@ -43,7 +43,7 @@
   .links {
     width: 30%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;

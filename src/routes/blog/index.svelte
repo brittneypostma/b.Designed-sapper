@@ -1,8 +1,8 @@
 <script context="module">
   export function preload({ params, query }) {
     return this.fetch(`blog.json`)
-      .then((r) => r.json())
-      .then((posts) => {
+      .then(r => r.json())
+      .then(posts => {
         return { posts };
       });
   }
@@ -10,6 +10,7 @@
 
 <script>
   export let posts;
+  import { fade } from "svelte/transition";
 </script>
 
 <svelte:head>
@@ -18,7 +19,7 @@
 
 <h1>Blog Posts</h1>
 
-<div class="grid-logs">
+<div in:fade={{ duration: 400 }} class="grid-logs">
   {#each posts as post}
     <div class="card">
       <a rel="prefetch" href="blog/{post.slug}">

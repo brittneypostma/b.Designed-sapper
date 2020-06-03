@@ -1,5 +1,4 @@
 <script>
-  import { fade } from "svelte/transition";
   import { stores } from "@sapper/app";
   import Nav from "../components/Nav.svelte";
   import Spinner from "../components/Spinner.svelte";
@@ -13,7 +12,7 @@
 
   <Nav {segment} />
   {#if !$preloading}
-    <main transition:fade>
+    <main>
       <slot />
     </main>
   {:else}
@@ -36,8 +35,7 @@
   main {
     background: url("/me.png") no-repeat fixed bottom right;
     position: relative;
-    padding: 2em;
-    margin: 1em auto 0;
+    padding-bottom: 60px;
     box-sizing: border-box;
     width: 100%;
   }
