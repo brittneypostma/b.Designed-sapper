@@ -10,7 +10,7 @@
 
 <script>
   export let posts;
-  import { fade } from "svelte/transition";
+  import { fly } from "svelte/transition";
 </script>
 
 <svelte:head>
@@ -19,7 +19,7 @@
 
 <h1>Blog Posts</h1>
 
-<div in:fade={{ duration: 400 }} class="grid-logs">
+<div in:fly={{ x: 200, duration: 700 }} class="grid-logs">
   {#each posts as post}
     <div class="card">
       <a rel="prefetch" href="blog/{post.slug}">

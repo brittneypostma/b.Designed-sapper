@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import Image from "svelte-image";
   import { fadeIn } from "../animate";
   let mobile = false;
 
@@ -20,8 +21,8 @@
   <div class="blocks">
     {#if mobile}
       <div class="mobile-content">
-        <div class="image">
-          <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
+        <div class="imageWrapper">
+          <Image src="portfolio/console-logs.png" alt="Console Logs" />
         </div>
         <a
           href="https://console-logs.netlify.com/"
@@ -44,7 +45,7 @@
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
-          <img src="portfolio/logs.jpg" alt="Console Logs" width="100%" />
+          <Image src="portfolio/console-logs.png" alt="Console Logs" />
           <div class="content-details fadeIn-bottom">
             <h3 class="content-title">Console Logs</h3>
             <p class="content-text">A site for all of my programming notes.</p>
@@ -57,8 +58,8 @@
 
     {#if mobile}
       <div class="mobile-content">
-        <div class="image">
-          <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
+        <div class="imageWrapper">
+          <Image src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
         </div>
         <a
           href="https://crwn-clothing-react.herokuapp.com/"
@@ -78,7 +79,7 @@
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
-          <img src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
+          <Image src="portfolio/crwn.jpg" alt="CRWN-CLOTHING" width="100%" />
           <div class="content-details fadeIn-bottom">
             <h3 class="content-title">CRWN-Clothing</h3>
             <p class="content-text">A mock e-commerce app.</p>
@@ -91,8 +92,8 @@
 
     {#if mobile}
       <div class="mobile-content">
-        <div class="image">
-          <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
+        <div class="imageWrapper">
+          <Image src="portfolio/zoo.png" alt="Waukazoo Check In" width="100%" />
         </div>
         <div class="mobile-links">
           <h3>Check In System</h3>
@@ -110,7 +111,7 @@
       <div class="content">
 
         <div class="content-overlay" />
-        <img src="portfolio/zoo.jpg" alt="Waukazoo Check In" width="100%" />
+        <Image src="portfolio/zoo.png" alt="Waukazoo Check In" width="100%" />
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Check In System</h3>
           <p class="content-text">
@@ -126,8 +127,8 @@
     {/if}
     {#if mobile}
       <div class="mobile-content">
-        <div class="image">
-          <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
+        <div class="imageWrapper">
+          <Image src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
           href="https://brittneypostma.github.io/piano/"
@@ -149,7 +150,7 @@
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
-          <img src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
+          <Image src="portfolio/piano.jpg" alt="Console Logs" width="100%" />
           <div class="content-details fadeIn-bottom">
             <h3 class="content-title">Piano Kit</h3>
             <p class="content-text">
@@ -163,8 +164,8 @@
     {/if}
     {#if mobile}
       <div class="mobile-content">
-        <div class="image">
-          <img src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
+        <div class="imageWrapper">
+          <Image src="portfolio/drum.jpg" alt="Console Logs" width="100%" />
         </div>
         <a
           href="https://red-cross-landing-page.netlify.app/"
@@ -185,7 +186,7 @@
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
-          <img
+          <Image
             src="portfolio/red-cross.png"
             alt="red-cross"
             width="100%"
@@ -204,8 +205,8 @@
     {/if}
     {#if mobile}
       <div class="mobile-content">
-        <div class="image">
-          <img
+        <div class="imageWrapper">
+          <Image
             src="portfolio/quote.jpg"
             alt="red-cross"
             width="100%"
@@ -232,7 +233,7 @@
           target="_blank"
           rel="noopener noreferrer">
           <div class="content-overlay" />
-          <img src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
+          <Image src="portfolio/quote.jpg" alt="Console Logs" width="100%" />
           <div class="content-details fadeIn-bottom">
             <h3 class="content-title">Random Quote Generator</h3>
             <p class="content-text">
@@ -262,23 +263,23 @@
     align-items: center;
     justify-items: center;
   }
-
-  img {
+  /* 
+  .portfolio {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     transition: all 0.3s linear;
     backface-visibility: hidden;
-  }
+  } */
 
   a {
     height: 100%;
     width: 100%;
+    display: grid;
   }
 
   .content {
-    height: 100%;
     width: 100%;
     position: relative;
     margin: 0;
@@ -317,6 +318,7 @@
     bottom: 0;
     right: 0;
     opacity: 0;
+    z-index: 2;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
@@ -360,6 +362,7 @@
     top: 50%;
     left: 50%;
     opacity: 1;
+    z-index: 3;
   }
 
   .content-details h3 {
@@ -408,9 +411,9 @@
       color: whitesmoke;
     }
 
-    .image > img {
+    /* .imageWrapper > .portfolio {
       border: 1px solid white;
-    }
+    } */
 
     .mobile-links {
       width: 100%;

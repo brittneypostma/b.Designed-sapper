@@ -10,8 +10,8 @@
 		"fullstack",
 		"portfolio"
 	],
-	"repository": "github:sballgirl11/b.Designed-sapper",
-	"bugs": "https://github.com/sballgirl11/b.Designed-sapper/issues",
+	"repository": "github:brittneypostma/b.Designed-sapper",
+	"bugs": "https://github.com/brittneypostma/b.Designed-sapper/issues",
 	"homepage": "https://bdesigned.netlify.com/",
 	"version": "0.0.1",
 	"license": "MIT",
@@ -53,6 +53,7 @@
 		"rollup-plugin-svelte": "^5.0.1",
 		"rollup-plugin-terser": "^5.1.3",
 		"sapper": "^0.27.12",
-		"svelte": "^3.0.0"
+		"svelte": "^3.0.0",
+		"svelte-image": "^0.2.3"
 	}
 }

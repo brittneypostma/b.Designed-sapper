@@ -13,6 +13,7 @@
 </script>
 
 <script>
+  import { fadeIn } from "../../animate";
   export let post;
 </script>
 
@@ -20,7 +21,7 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<div class="post-page">
+<div in:fadeIn class="post-page">
 
   <div class="post-header">
     <a rel="prefetch" href="blog">go back</a>
