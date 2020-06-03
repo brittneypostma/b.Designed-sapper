@@ -17,34 +17,40 @@
   <title>Blog</title>
 </svelte:head>
 
-<h1>Blog Posts</h1>
-<div in:fly={{ x: 200, duration: 700 }} class="grid-logs">
-  {#each posts as post}
+<div class="wrapper">
+  <h1>Blog Posts</h1>
+  <div in:fly={{ x: 200, duration: 700 }} class="grid-logs">
+    {#each posts as post}
+      <div class="card">
+        <a rel="prefetch" href="blog/{post.slug}">
+          <div>
+            <img src={post.image} alt={post.alt} />
+            <h3>{post.title}</h3>
+            <p>{post.printDate}</p>
+          </div>
+        </a>
+      </div>
+    {/each}
     <div class="card">
-      <a rel="prefetch" href="blog/{post.slug}">
+      <a rel="prefetch" href="https://console-logs.netlify.app/blog">
         <div>
-          <img src={post.image} alt={post.alt} />
-          <h3>{post.title}</h3>
-          <p>{post.printDate}</p>
+          <img
+            style="width: 150%; position: relative; right: 25%;"
+            src="./portfolio/logs.jpg"
+            alt="console-logs" />
+          <h3>Console Logs</h3>
+          <p>Multiple dev blog posts.</p>
         </div>
       </a>
     </div>
-  {/each}
-  <div class="card">
-    <a rel="prefetch" href="https://console-logs.netlify.app/blog">
-      <div>
-        <img
-          style="width: 150%; position: relative; right: 25%;"
-          src="./portfolio/logs.jpg"
-          alt="console-logs" />
-        <h3>Console Logs</h3>
-        <p>Multiple dev blog posts.</p>
-      </div>
-    </a>
   </div>
 </div>
 
 <style>
+  .wrapper {
+    align-self: flex-start;
+  }
+
   .grid-logs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
