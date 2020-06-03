@@ -18,7 +18,6 @@
 </svelte:head>
 
 <h1>Blog Posts</h1>
-
 <div in:fly={{ x: 200, duration: 700 }} class="grid-logs">
   {#each posts as post}
     <div class="card">
