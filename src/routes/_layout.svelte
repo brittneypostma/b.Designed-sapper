@@ -38,6 +38,8 @@
     padding-bottom: 60px;
     box-sizing: border-box;
     width: 100%;
+    display: grid;
+    align-items: center;
   }
 
   @keyframes move-twink-back {
