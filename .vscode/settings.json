@@ -6,5 +6,6 @@
         "scrollbars",
         "textfield",
         "webkit"
-    ]
+    ],
+    "deno.enable": false
 }
