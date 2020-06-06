@@ -32,7 +32,7 @@
       </div>
     {/each}
     <div class="card">
-      <a rel="prefetch" href="https://console-logs.netlify.app/blog">
+      <a rel="prefetch" href="https://console-logs.netlify.app/logs">
         <div>
           <img
             style="width: 150%; position: relative; right: 25%;"
