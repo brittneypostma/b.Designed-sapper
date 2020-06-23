@@ -1,6 +1,6 @@
 ---
 title: "Hollywood, California"
-date: "11-14-2019"
+date: "Nov 14, 2019"
 image: "blog-images/kcs/hollywood.jpg"
 alt: "Hollywood Sign"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Roatan, Honduras"
-date: "08-21-2019"
+date: "Aug 21, 2019"
 image: "blog-images/roatan.jpg"
 alt: "Mahogany Bay, Roatan"
 ---

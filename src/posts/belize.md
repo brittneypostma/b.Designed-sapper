@@ -1,6 +1,6 @@
 ---
 title: "Belize"
-date: "08-22-2019"
+date: "Aug 22, 2019"
 image: "blog-images/belize-sm.jpg"
 alt: "Belize"
 ---

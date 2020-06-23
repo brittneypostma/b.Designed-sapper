@@ -1,8 +1,8 @@
 <script context="module">
   export function preload({ params, query }) {
     return this.fetch(`blog.json`)
-      .then(r => r.json())
-      .then(posts => {
+      .then((r) => r.json())
+      .then((posts) => {
         return { posts };
       });
   }
@@ -26,7 +26,7 @@
           <div>
             <img src={post.image} alt={post.alt} />
             <h3>{post.title}</h3>
-            <p>{post.printDate}</p>
+            <p>{post.date}</p>
           </div>
         </a>
       </div>

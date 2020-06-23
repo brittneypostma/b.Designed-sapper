@@ -1,6 +1,6 @@
 ---
 title: "Grand Cayman"
-date: "08-20-2019"
+date: "Aug 20, 2019"
 image: "blog-images/scuba.jpg"
 alt: "Joe scuba diving signing the okay sign with his hand"
 ---
