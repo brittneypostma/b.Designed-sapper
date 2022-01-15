@@ -29,7 +29,7 @@
 		"date-fns": "^2.8.1",
 		"gray-matter": "^4.0.2",
 		"js-yaml": "^3.13.1",
-		"marked": "^0.8.0",
+		"marked": "^4.0.10",
 		"matter": "^0.2.0",
 		"polka": "next",
 		"sirv": "^0.4.0"
